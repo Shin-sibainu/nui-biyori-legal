@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぬい日和 | 法的情報</title>
+  <meta name="description" content="ぬい好きのためのやさしいSNS「ぬい日和」のプライバシーポリシー・利用規約。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      letter-spacing: 0.02em;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 520px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 28px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 40px -16px rgba(107, 88, 70, 0.15);
+      padding: 48px 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 36px 24px;
+        border-radius: 20px;
+      }
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .tagline {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    a.link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 18px 22px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.2s ease;
+    }
+
+    a.link-btn:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    a.link-btn .arrow {
+      color: var(--accent-deep);
+      font-size: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    a.link-btn:hover .arrow {
+      transform: translateX(3px);
+    }
+
+    .label-with-icon {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="badge">ぬい日和</div>
+      <h1>法的情報</h1>
+      <p class="tagline">ぬい好きのための、やさしい SNS。<br>安心してお使いいただくための文書です。</p>
+      <div class="links">
+        <a class="link-btn" href="./privacy.html">
+          <div class="label-with-icon">
+            <div class="icon-circle">🔒</div>
+            <span>プライバシーポリシー</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-btn" href="./terms.html">
+          <div class="label-with-icon">
+            <div class="icon-circle">📄</div>
+            <span>利用規約</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+      <div class="footer">© ぬい日和</div>
+    </div>
+  </div>
+</body>
+</html>
