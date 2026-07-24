@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>ぬい日和をご利用のみなさまへ | ぬい日和</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .header h1 {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 28px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 10px; }
+      .header { padding: 24px 20px; border-radius: 10px; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    p.em {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 16px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    a { color: var(--accent-deep); word-break: break-all; }
+
+    .signature {
+      margin-top: 36px;
+      text-align: right;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back-link" href="./index.html">← もどる</a>
+    <div class="header">
+      <h1>ぬい日和をご利用のみなさまへ</h1>
+      <div class="meta">2026年7月25日</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        いつもぬい日和をご利用いただきまして、本当にありがとうございます。<br>
+        この文書は、いただいた以下の4つのご指摘についてご説明するものです。
+      </p>
+
+      <ul>
+        <li>ぬい日和のアプリアイコンに生成AIを使っているのではないか</li>
+        <li>ストア画像にも生成AIを使っているのではないか</li>
+        <li>アプリのデザインがインスタグラム（その他SNS）に似すぎているのではないか</li>
+        <li>開発者（私）がレビューをした人の特定を試みたのではないか</li>
+      </ul>
+
+      <p>
+        こちら、1つずつぬい日和運営者の私から、自分の言葉で記述させていただきます。<br>
+        その前に、いちばんご不安が大きいと思われる点から、先にお伝えさせてください。
+      </p>
+
+      <h2>1. まずはじめに大事な事</h2>
+      <p>まず最初に皆様にはっきりとお伝えしたいことは</p>
+      <p class="em">「皆様がぬい日和で投稿した画像を、AIの学習データに使うことは一切していない」</p>
+      <p>という事です。</p>
+      <p>
+        ぬい日和で投稿された画像はCloudflare R2という画像ストレージサービスに保存される仕様になっております。
+      </p>
+      <p>
+        この画像ストレージに保存されている画像が、外部のAIサービス（ChatGPTやClaude, Gemini等）と連携されているといったことは一切ございませんので、ご安心いただければと思います。
+      </p>
+      <p>この方針は、本日付で利用規約とプライバシーポリシーにも明文化しました。</p>
+      <ul>
+        <li><a href="./terms.html">利用規約</a>（2026年7月25日 改定）</li>
+        <li><a href="./privacy.html">プライバシーポリシー</a>（2026年7月25日 改定）</li>
+      </ul>
+
+      <h2>2. アプリアイコン・ストア画像への生成AIの使用について</h2>
+      <p>こちら結論から言いますと「アイコンとストア画像の一部は生成AIで作成したもの」です。</p>
+      <p>
+        開発は一人でしており、限られた時間をアプリ本体の開発に集中させるために利用していました。この生成AIの利用に関して、私の軽率な判断だったと反省しております。<br>
+        不快に思われてしまった方、誠に申し訳ございませんでした。
+      </p>
+      <p>ストア画像に関しましては、既に以下の対応を行っております。</p>
+      <ul>
+        <li>生成AIを使用していない、実際のぬいぐるみの写真へ差し替え済みで、現在 App Store の審査中です</li>
+      </ul>
+      <p>
+        App Store の審査には数日かかりますので、審査が通り次第、新しい画像へ置き換わります。却下されてしまった場合はさらに時間がかかる場合がございます。申し訳ございません。
+      </p>
+      <p>
+        また、アプリのアイコンの対策としましては、今後アイコン作家様等にご依頼して作成していただこうと考えております。
+      </p>
+
+      <h2>3. アプリのデザインについて</h2>
+      <p>「インスタグラムに似すぎているのでは」との声をいただきました。</p>
+      <p>
+        フィードやタブといった基本的な画面構成は、多くのSNSで共通する標準的な形を参考にしています。そのうえで、「うちの子登録」や「なでなで」など、ぬいのための独自の機能を作ってきました。
+      </p>
+
+      <h2>4. 「レビューをした方の特定」に関する投稿について</h2>
+      <p>こちらが最も心配された声だと思います。</p>
+      <p>
+        この「レビューを特定しようとした」対象のアプリはぬい日和ではなく「きぶん日和」という私が開発した別のアプリになります。
+      </p>
+      <p>
+        当時、リリースをした直後に星1の低評価がつき、その悔しさから「レビューをした方を特定できないか」という趣旨の投稿をしてしまいました。
+      </p>
+      <p>
+        それでも、私のアプリをレビューした方を特定しようとしたという行為は事実です。「不特定多数のユーザーが匿名で自由にレビューできる」というのが App Store レビューの在り方であると思っていますので、軽率な行動を取ってしまったと反省しております。申し訳ございませんでした。
+      </p>
+      <p><strong>今後、レビューをされた方を特定しようとする行為は、一切行いません。</strong></p>
+
+      <h2>5. 開発での生成AIの利用について</h2>
+      <p>こちらはご指摘には含まれていませんでしたが、あわせて自分からお伝えしておきます。</p>
+      <p>
+        ぬい日和のプログラム開発（コードの作成や画面デザインの実装）には、生成AIの支援ツールを使っています。ぬい日和の開発は私がひとりで行っており、この規模のアプリを毎日改善し続けるために、開発ツールとしてのAIは今後も使い続けます。
+      </p>
+      <p>
+        ただし、これは開発作業（コードを書くこと）の話です。上に書いたとおり、皆様が投稿された写真や文章がこれらのツールに渡ることは一切ありません。
+      </p>
+
+      <h2>さいごに</h2>
+      <p>
+        いつもぬい日和をご利用くださっている皆様、そしてご利用を検討していた方、この度はご心配をおかけしてしまい誠に申し訳ございませんでした。
+      </p>
+      <p>今後は、このような事がないように反省して参ります。</p>
+
+      <div class="signature">2026年7月25日<br>ぬい日和 開発・運営</div>
+    </div>
+
+    <div class="footer">© ぬい日和</div>
+  </div>
+</body>
+</html>
