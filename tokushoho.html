@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>特定商取引法に基づく表記 | ぬい日和</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+
+    dl { margin: 0; }
+
+    dt {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-top: 24px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    dt:first-of-type { margin-top: 0; }
+
+    dd {
+      font-size: 14px;
+      line-height: 1.9;
+      margin: 10px 0 0;
+    }
+
+    dd ul {
+      list-style: none;
+      padding-left: 2px;
+      margin-top: 6px;
+    }
+
+    dd ul li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 6px;
+    }
+
+    dd ul li::before {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 12px;
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: 8px 0 0;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    a { color: var(--accent-deep); word-break: break-all; }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>特定商取引法に基づく表記</h1>
+      <div class="meta">2026年7月25日</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        「ぬい日和」（以下「本アプリ」）における有料サービスについて、特定商取引法に基づき以下のとおり表示します。
+      </p>
+
+      <dl>
+        <dt>販売事業者</dt>
+        <dd>ShinCode</dd>
+
+        <dt>運営統括責任者</dt>
+        <dd>進 拓海</dd>
+
+        <dt>所在地</dt>
+        <dd>請求があった場合、遅滞なく開示いたします。</dd>
+
+        <dt>電話番号</dt>
+        <dd>請求があった場合、遅滞なく開示いたします。</dd>
+
+        <dt>メールアドレス</dt>
+        <dd><a href="mailto:info@nuibiyori.com">info@nuibiyori.com</a></dd>
+
+        <dt>販売価格</dt>
+        <dd>
+          ぬい日和 Pro（月額プラン）：月額 300円（税込）
+          <p class="note">価格はアプリ内の購入画面に表示されます。App Store の設定により、表示価格が異なる場合があります。</p>
+        </dd>
+
+        <dt>商品代金以外の必要料金</dt>
+        <dd>
+          本アプリのダウンロードおよび利用に必要な通信料は、お客様のご負担となります。
+        </dd>
+
+        <dt>お支払い方法</dt>
+        <dd>
+          Apple App Store のアプリ内課金によるお支払い（お客様が App Store に登録された決済手段）
+        </dd>
+
+        <dt>お支払い時期</dt>
+        <dd>
+          ご購入手続きの完了時に課金されます。月額プランは、解約されない限り、期間終了の24時間前に自動更新され、その都度課金されます。
+        </dd>
+
+        <dt>サービスの提供時期</dt>
+        <dd>
+          ご購入手続きの完了後、ただちにご利用いただけます。
+        </dd>
+
+        <dt>解約について</dt>
+        <dd>
+          月額プランの解約は、ご利用の端末の「設定」→ Apple アカウント →「サブスクリプション」からいつでも行えます。
+          <p class="note">解約後も、購入済みの期間が終了するまではご利用いただけます。</p>
+        </dd>
+
+        <dt>返品・返金について</dt>
+        <dd>
+          サービスの性質上、購入後の返品はお受けできません。返金については Apple の定めるポリシーに従い、Apple のサポートへお問い合わせください。
+        </dd>
+
+        <dt>動作環境</dt>
+        <dd>
+          iOS 端末（対応バージョンは App Store の掲載情報をご確認ください）
+        </dd>
+      </dl>
+
+      <p class="note" style="margin-top:24px">
+        本表記に関するお問い合わせは、上記のメールアドレスまでご連絡ください。
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← もどる</a>
+    <div class="footer">© ぬい日和</div>
+  </div>
+</body>
+</html>
