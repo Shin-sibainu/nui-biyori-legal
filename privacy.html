@@ -128,11 +128,13 @@
       font-size: 13px;
       line-height: 1.85;
       color: var(--text-secondary);
-      background: var(--accent-soft);
-      border-left: 3px solid var(--accent);
-      border-radius: 6px;
-      padding: 12px 14px;
-      margin: -2px 0 14px;
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
     }
 
     ul {
@@ -190,7 +192,7 @@
         <li>技術情報: ログイン日時、デバイス種別、OS バージョン</li>
       </ul>
       <p class="note">
-        ここに書かれていない情報（端末内の連絡先、他のアプリでの行動履歴など）を取得することはありません。
+        位置情報は取得しません。アプリが端末の位置情報の許可を求めることはなく、写真に記録された撮影場所などの情報（Exif）も、アップロード時の変換によって保存されません。連絡先や他のアプリでの行動履歴など、ここに記載のない情報を取得することもありません。
       </p>
 
       <h2>2. 利用目的</h2>
