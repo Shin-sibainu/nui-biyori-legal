@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生成AIの利用について | ぬい日和</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* 中心となる約束を強調する */
+    .promise {
+      background: var(--accent-soft);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin: 0 0 20px;
+    }
+
+    .promise .lead {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .promise ul { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent-deep);
+    }
+
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    a { color: var(--accent-deep); word-break: break-all; }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>生成AIの利用について</h1>
+      <div class="meta">2026年7月27日</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        ぬい日和では、生成AIをどのように扱っているかを、包み隠さずお伝えします。うちの子との大切な写真をお預かりしている責任として、この方針は今後も守り続けます。
+      </p>
+
+      <h2>1. みなさんが投稿した写真について</h2>
+
+      <div class="promise">
+        <p class="lead">投稿された写真を、</p>
+        <ul>
+          <li>AIの学習に使用することはありません</li>
+          <li>AIによる画像生成の素材にすることはありません</li>
+          <li>外部のAIサービスに送信することはありません</li>
+        </ul>
+      </div>
+
+      <p>
+        投稿された写真は、<a href="https://www.cloudflare.com/ja-jp/developer-platform/products/r2" target="_blank" rel="noopener">Cloudflare R2</a> という画像ストレージに保存され、アプリでの表示と保存（バックアップやサムネイル生成）のためだけに使われます。ChatGPT や Claude、Gemini といった外部のAIサービスと連携している箇所は一切ありません。
+      </p>
+      <p>
+        利用状況の分析ツールにも、写真や本文の内容は送信していません。
+      </p>
+      <p>
+        この方針は、口約束ではなく文書として定めています。
+      </p>
+      <ul>
+        <li><a href="./terms.html">利用規約</a>（第2条 投稿コンテンツ）</li>
+        <li><a href="./privacy.html">プライバシーポリシー</a>（第2条 利用目的）</li>
+      </ul>
+
+      <h2>2. アプリのデザイン素材について</h2>
+      <p>
+        アプリのアイコン、ロゴ、および以前の App Store 掲載画像の制作に、生成AIを使用していました。開発を一人で進めるなかで、限られた時間をアプリ本体の改善に充てるための判断でしたが、軽率でした。ご不快な思いをされた方に、お詫び申し上げます。
+      </p>
+      <p>
+        現在、以下のとおり対応しています。
+      </p>
+      <ul>
+        <li>App Store の掲載画像は、生成AIを使用していない実際の写真へ差し替え済みです</li>
+        <li>アプリのアイコンは、イラストレーターの方に制作をご依頼しています</li>
+        <li>今後、ぬい日和の公式なアイコン・宣伝画像に生成AI画像は使用しません</li>
+      </ul>
+      <p class="note">
+        アイコンの差し替えは、アプリの更新が必要なためお時間をいただきます。準備が整いしだいお知らせします。
+      </p>
+
+      <h2>3. 開発での利用について</h2>
+      <p>
+        ぬい日和のプログラム開発（コードの作成や画面デザインの実装）には、生成AIの支援ツールを使用しています。ぬい日和の開発は私がひとりで行っており、この規模のアプリを毎日改善し続けるために、開発ツールとしてのAIは今後も使用します。
+      </p>
+      <p>
+        ただし、これは開発作業の話です。第1章に記載のとおり、みなさんが投稿された写真や文章がこれらのツールに渡ることは一切ありません。
+      </p>
+
+      <h2>ご不明な点は</h2>
+      <p>
+        本方針についてのご質問は、アプリ内のフィードバック、または <a href="mailto:info@nuibiyori.com">info@nuibiyori.com</a> までお気軽にお寄せください。
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← もどる</a>
+    <div class="footer">© ぬい日和</div>
+  </div>
+</body>
+</html>
