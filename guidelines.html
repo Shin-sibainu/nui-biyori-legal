@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投稿ガイドライン | ぬい日和</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足 */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    /* いちばん大切なお願いを包むボックス（既存トークンのみ使用） */
+    .rule-box {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .rule-box .rule {
+      font-family: 'Klee One', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .rule-box p { margin-bottom: 0; font-size: 13px; color: var(--text-secondary); }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>投稿ガイドライン</h1>
+      <div class="meta">2026年8月7日 公開</div>
+    </div>
+    <div class="content">
+      <p class="intro">
+        ぬい日和は、大切にしているぬいぐるみ——「うちの子」——と過ごす毎日を、安心して残しておける場所を目指しています。このガイドラインは、その世界観をみんなで守っていくためのお願いごとです。
+      </p>
+
+      <h2>たったひとつのお願い</h2>
+      <div class="rule-box">
+        <div class="rule">写真の1枚目に、あなたのうちの子が写っていること。</div>
+        <p>お願いはこれだけです。</p>
+      </div>
+      <p>
+        タイムラインに並ぶのは、1枚目のお写真です。ぬい日和を開いたとき、みんなのうちの子たちの姿が並んでいる——その景色を守るためのお願いです。
+      </p>
+      <p>
+        2枚目以降のお写真も、できるだけうちの子と一緒だと嬉しいです🧸 お洋服のアップやお食事の写真などが混ざるのは大丈夫です。
+      </p>
+
+      <h2>「うちの子」に含まれるもの</h2>
+      <ul>
+        <li>ぬいぐるみ（市販の子も、手作りの子も）</li>
+        <li>ドール</li>
+        <li>シルバニアファミリーなどの人形</li>
+      </ul>
+      <p>
+        お迎えして大切にされている子であれば、大きさや、有名・無名は問いません。
+      </p>
+
+      <h2>一緒に写っていて大丈夫なもの</h2>
+      <p>
+        ペット（ねこちゃん・わんちゃんなど）、ご自身で描いたイラスト、お洋服や小物、お食事、風景、推しのグッズなど。1枚目にうちの子が写っていれば、一緒に写るものに制限はありません。
+      </p>
+
+      <h2>いまは対象外とさせていただいているもの</h2>
+      <ul>
+        <li>フィギュア類（ねんどろいど、スケールフィギュア、アクリルスタンド、プラモデルなど）</li>
+        <li>ロボットなどの電子機器</li>
+        <li>本物の生きものと見分けがつかないほど写実的なぬいぐるみ</li>
+        <li>うちの子が1枚目に写っていない写真（グッズのみ、風景のみ など）</li>
+      </ul>
+      <p>
+        かわいくないから、ではありません。ぬい日和の世界観を保つために、いまは線を引かせていただいています。今後、変わる可能性はあります。
+      </p>
+
+      <h2>これまでの投稿について</h2>
+      <p>
+        このガイドラインは、公開日以降の新しい投稿についてのお願いです。これまでの投稿をさかのぼって削除するようなことはありませんので、ご安心ください。
+      </p>
+
+      <h2>気になる投稿を見かけたら</h2>
+      <p>
+        コメントでの注意やご指摘ではなく、投稿の通報機能をお使いください。内容は運営がすべて確認し、対応を判断いたします。
+      </p>
+
+      <h2>迷ったときは</h2>
+      <p>
+        「これは投稿していいのかな？」と迷ったときは、アプリ内の「フィードバック」からお気軽にご質問ください。
+      </p>
+      <p class="note">
+        このガイドラインは、みなさまの声を聞きながら育てていきます。
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← もどる</a>
+    <div class="footer">© ぬい日和</div>
+  </div>
+</body>
+</html>
