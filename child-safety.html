@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>子どもの安全基準 | ぬい日和</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    ol {
+      padding-left: 1.4em;
+      margin-bottom: 14px;
+    }
+
+    ol li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .mail-box {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 16px 0 18px;
+      text-align: center;
+    }
+
+    .mail-box a {
+      font-family: 'Klee One', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent-deep);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    .mail-box a:hover { text-decoration: underline; }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>子どもの安全基準</h1>
+      <div class="meta">ぬい日和 / Shin Code</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        ぬい日和は、ぬいぐるみが好きな方のための写真共有 SNS です。運営者である Shin Code は、児童の性的虐待と搾取（CSAE）を一切許容しません。このページでは、ぬい日和が子どもの安全を守るために定めている基準と、その運用についてご説明します。
+      </p>
+
+      <h2>禁止していること</h2>
+      <p>
+        次の行為は、ぬい日和の<a href="./terms.html" style="color: var(--accent-deep);">利用規約</a>および<a href="./guidelines.html" style="color: var(--accent-deep);">ガイドライン</a>で明確に禁止しています。発見した場合は例外なく削除し、アカウントを停止します。
+      </p>
+      <ul>
+        <li>児童の性的虐待に関するコンテンツ（CSAM）の投稿、共有、リンクの掲載</li>
+        <li>児童を性的に描写、示唆、または性的対象として扱うあらゆる表現（実写・イラスト・生成物を問いません）</li>
+        <li>未成年者に対する性的な誘引（グルーミング）、性的な会話、接触の要求</li>
+        <li>未成年者の性的搾取につながる勧誘、取引、あっせん</li>
+        <li>未成年者の個人情報や所在が特定できる情報の収集、公開</li>
+      </ul>
+      <p class="note">
+        ぬい日和はぬいぐるみの写真を共有する場であり、人物を主題とした投稿はもともと想定していません。
+      </p>
+
+      <h2>利用できる年齢</h2>
+      <p>
+        ぬい日和は 13 歳以上の方を対象としています。13 歳未満の方はご利用いただけません。13 歳未満の方によるアカウントであることが判明した場合は、そのアカウントとデータを削除します。
+      </p>
+
+      <h2>通報の方法</h2>
+      <p>
+        子どもの安全に関わる懸念は、アプリを離れることなく、次のいずれの方法でもご報告いただけます。
+      </p>
+      <ul>
+        <li><strong>投稿・コメント・アカウントの通報</strong>：対象の「…」メニューから「通報する」を選び、理由を選択して送信します</li>
+        <li><strong>アプリ内フィードバック</strong>：マイページ &gt; 設定 &gt; ご意見・ご要望 から、運営に直接ご連絡いただけます</li>
+      </ul>
+      <p>
+        アプリをお持ちでない方や、緊急性の高い内容については、下記のメールアドレスへ直接ご連絡ください。
+      </p>
+
+      <div class="mail-box">
+        <a href="mailto:info@nuibiyori.com?subject=%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AE%E5%AE%89%E5%85%A8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%94%E5%A0%B1%E5%91%8A">info@nuibiyori.com</a>
+      </div>
+
+      <h2>通報を受けたあとの対応</h2>
+      <p>
+        子どもの安全に関わる通報は、他の通報よりも優先して確認します。
+      </p>
+      <ol>
+        <li>内容を確認し、必要があれば直ちにコンテンツを非公開にします</li>
+        <li>違反が認められた場合、コンテンツを削除し、保存している画像も消去します</li>
+        <li>投稿したアカウントを停止します。再登録による回避が確認された場合も、同様に停止します</li>
+        <li>法令にもとづき、関係当局への報告が必要な場合は報告します</li>
+      </ol>
+      <p class="note">
+        通報された方の情報を、通報された相手に伝えることはありません。
+      </p>
+
+      <h2>法令の遵守と当局への報告</h2>
+      <p>
+        ぬい日和は、子どもの安全に関する適用法令を遵守します。児童の性的虐待に関するコンテンツを確認した場合は、各国・地域の法令に従い、関係当局への報告を行います。捜査機関からの適法な要請には協力します。
+      </p>
+
+      <h2>お問い合わせ窓口</h2>
+      <p>
+        本基準および CSAM の防止対策に関するお問い合わせは、下記までご連絡ください。運営者本人が対応します。
+      </p>
+      <ul>
+        <li>担当者: Shin（ぬい日和 開発・運営）</li>
+        <li>連絡先: <a href="mailto:info@nuibiyori.com" style="color: var(--accent-deep);">info@nuibiyori.com</a></li>
+      </ul>
+
+      <h2>関連ページ</h2>
+      <ul>
+        <li><a href="./terms.html" style="color: var(--accent-deep);">利用規約</a></li>
+        <li><a href="./guidelines.html" style="color: var(--accent-deep);">コミュニティガイドライン</a></li>
+        <li><a href="./privacy.html" style="color: var(--accent-deep);">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+
+    <a class="back-link" href="./index.html">← もどる</a>
+    <div class="footer">© ぬい日和</div>
+  </div>
+</body>
+</html>
