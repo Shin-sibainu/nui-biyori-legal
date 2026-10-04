@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posting Guidelines | Nui Biyori</title>
+  <meta property="og:title" content="Posting Guidelines | Nui Biyori">
+  <meta property="og:description" content="About the photos you can post on Nui Biyori: what counts as your plushie, what's not included, and a quick reference for when you're unsure.">
+  <meta property="og:image" content="https://shin-sibainu.github.io/nui-biyori-legal/ogp-guidelines.png">
+  <meta property="og:url" content="https://shin-sibainu.github.io/nui-biyori-legal/en/guidelines.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Nui Biyori">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足 */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    /* いちばん大切なお願いを包むボックス（既存トークンのみ使用） */
+    .rule-box {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .rule-box .rule {
+      font-family: 'Klee One', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .rule-box p { margin-bottom: 0; font-size: 13px; color: var(--text-secondary); }
+
+    /* かんたん早見表 */
+    .table-scroll { overflow-x: auto; margin-bottom: 6px; }
+
+    .quick-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 13px;
+      line-height: 1.7;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .quick-table th {
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .quick-table th.ok-th {
+      background: var(--accent-soft);
+      color: var(--text-primary);
+      border-right: 1px solid var(--border);
+    }
+
+    .quick-table th.ng-th {
+      background: var(--bg);
+      color: var(--text-secondary);
+    }
+
+    .quick-table td {
+      padding: 9px 14px;
+      border-top: 1px solid var(--border);
+      color: var(--text-primary);
+      vertical-align: top;
+      width: 50%;
+    }
+
+    .quick-table td:first-child {
+      border-right: 1px solid var(--border);
+    }
+
+    .quick-table td:last-child {
+      color: var(--text-secondary);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 英語版だけの追加（日本語版へのリンクと、翻訳である旨の注記） */
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "Note: "; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/guidelines.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/guidelines.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../guidelines.html" lang="ja">日本語</a></div>
+    <p class="translation-note">This is an English translation of the Japanese original, provided for your convenience. If there is any difference between the two, the Japanese version takes precedence.</p>
+    <div class="header">
+      <h1>Posting Guidelines</h1>
+      <div class="meta">Published August 7, 2026 (last updated October 4, 2026)</div>
+    </div>
+    <div class="content">
+      <p class="intro">
+        Nui Biyori aims to be a place where you can safely keep a record of everyday life with the plushies you love, your "uchi no ko" (your own plushie). These guidelines are our requests to everyone, so that we can protect that world together.
+      </p>
+
+      <h2>What counts as your plushie</h2>
+      <p>
+        On Nui Biyori, "your plushie" means <strong>soft friends whose bodies are fluffy and cuddly</strong>.
+      </p>
+      <ul>
+        <li>Plushies (animals, store-bought, handmade, amigurumi, needle felt, and oshi plushies. Plushies of characters such as Pokémon or Chiikawa are welcome too)</li>
+        <li>Dolls whose whole body has a fluffy, flocked finish, such as Sylvanian Families or flocked mascots</li>
+      </ul>
+      <p>
+        Any size is fine, as long as they're a plushie you welcomed home and cherish.<br>
+        A plushie of your favorite character counts as your plushie too, as long as it's in plushie form.
+      </p>
+      <p>
+        How firm or fluffy they feel doesn't matter. <strong>If their body is made of fabric, yarn, cotton, or similar materials, they count as your plushie.</strong> Plushies tightly stuffed and firm, plushies made of smooth fabric, and dolls made of cloth are all included.<br>
+        ("Fluffy and cuddly" is simply our way of telling plushies apart from dolls and figures.)
+      </p>
+
+      <h2>What's not included for now</h2>
+      <ul>
+        <li>Dolls (dolls made of smooth, skin-like materials, such as Licca-chan, Blythe, or blind-box dolls)</li>
+        <li>Figures (Nendoroid, Nendoroid Doll, Obitsu-roid, scale figures, soft vinyl figures, plastic models, etc.)</li>
+        <li>Robots and other electronic devices (a plushie whose outside is made of fabric or flocking and looks like a plushie counts as your plushie. Ones with a plastic or other machine-like outside are not included)</li>
+        <li>AI-generated images of the plushie itself</li>
+        <li>Plushies so realistic that they can't be told apart from real animals (because they become indistinguishable from photos of real animals. Custom plushies of pets and other plushies that are clearly plushies are fine)</li>
+        <li>Cushions or plushies printed directly with a photo (because posting them is no different from posting the photo itself)</li>
+        <li>Photos that clearly show a person's face (including faces on printed items such as trading cards or panels)</li>
+        <li>Photos where your plushie isn't in the first image (goods only, scenery only, etc.)</li>
+      </ul>
+      <div class="rule-box">
+        <div class="rule">You don't need to delete photos you've already posted.</div>
+        <p>There's no need at all to delete your account either. Please keep your past posts as they are, and follow these guidelines for new posts from now on.</p>
+      </div>
+      <p>
+        We draw the line based on <strong>whether the plushie's body is fluffy</strong>.<br>
+        It's a line to protect the view you see when you open Nui Biyori: rows of fluffy friends. It is never a judgment about whether a friend is loved.
+      </p>
+      <p>
+        There was a time when our earlier announcements said dolls and figures were also fine. We're truly sorry for adding a restriction later to something we had once said was OK. We know how much people cherish their dolls and figures, and honestly, we wish we could welcome every one of them. This time, though, we chose to prioritize protecting the world of Nui Biyori, and drew this line with a heavy heart.
+      </p>
+
+      <h2>We look at the body, not the clothes</h2>
+      <p>
+        Whether a friend counts as your plushie depends on their own body, not their clothes.<br>
+        Plushies like Monchhichi or Labubu, whose faces are smooth but whose bodies are fluffy, count as your plushie.
+      </p>
+      <p>
+        On the other hand, a doll or figure body (including ones using a Nendoroid head) is not included, even when wearing fluffy clothes or a costume.
+      </p>
+
+      <h2>Quick reference</h2>
+      <div class="table-scroll">
+        <table class="quick-table">
+          <thead>
+            <tr>
+              <th class="ok-th">🧸 OK as your plushie</th>
+              <th class="ng-th">Not included for now</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Plushies (oshi plushies, animals, characters like Pokémon or Chiikawa)</td>
+              <td>Dolls (Licca-chan, Blythe, blind-box dolls, etc.)</td>
+            </tr>
+            <tr>
+              <td>Handmade plushies, needle felt</td>
+              <td>Nendoroid, Nendoroid Doll</td>
+            </tr>
+            <tr>
+              <td>Sylvanian Families, flocked mascots</td>
+              <td>Soft vinyl figures, scale figures, plastic models</td>
+            </tr>
+            <tr>
+              <td>Monchhichi, Labubu (smooth face, fluffy body)</td>
+              <td>Robots and other electronic devices</td>
+            </tr>
+            <tr>
+              <td>Custom plushies of pets (in plushie form)</td>
+              <td>Cushions or plushies printed directly with a photo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        If it's not in the table, ask yourself whether its body is fluffy and cuddly. If you're unsure, feel free to ask us through "Feedback" in the App.
+      </p>
+
+      <h2>When you post</h2>
+      <div class="rule-box">
+        <div class="rule">Make sure your plushie is in the first photo.</div>
+      </div>
+      <p>
+        The first photo is what appears in the timeline. When you open Nui Biyori, you see everyone's plushies lined up. This request is to protect that view.
+      </p>
+      <p>
+        We'd be happy if the second and later photos also include your plushie when possible 🧸<br>
+        It's fine to mix in close-ups of outfits, photos of food, and so on.
+      </p>
+      <p>
+        Please put photos of works in progress or repairs (showing the stuffing, half-sewn parts, etc.) in the second photo or later.<br>
+        We'd like the timeline to show plushies looking like their usual selves.
+      </p>
+
+      <h2>Taking photos when you're out</h2>
+      <p>
+        Taking photos of your plushie on outings is one of the joys of Nui Biyori.
+      </p>
+      <p>
+        We have just one request about taking photos in shops. <strong>Unless you have the shop's permission, please refrain from posting photos where your plushie is placed inside merchandise for sale or on store shelves.</strong> It can cause trouble for shop staff and other customers.
+      </p>
+      <p>
+        Of course, it's fine if you've checked with the staff, if you're in a place where photos are allowed, or if you're taking photos with items after you've bought them.
+      </p>
+      <p>
+        There's no need to delete photos you've already posted.
+      </p>
+
+      <h2>Dolls and figures in your photos</h2>
+      <p>
+        Dolls and figures can't be registered as your plushie. For photos, here's how we'd like you to think about it.
+      </p>
+      <ul>
+        <li><strong>Please avoid</strong>: photos that intentionally include dolls or figures, such as posing them next to your plushie</li>
+        <li><strong>That's fine</strong>: when they just happen to be in the background, such as on a shelf in your room</li>
+      </ul>
+      <p>
+        There's no need to tidy them away so they're out of the shot. And you don't need to delete photos you've already posted.
+      </p>
+      <p>
+        Oshi goods such as acrylic stands can be in your photos, just as before. Character goods (illustrated acrylic stands, badges, etc.) are no problem. Even for VTubers or singers modeled on real people, it's fine as long as it's an illustration. Photos taken next to illustrated character panels, such as at photo booths in collab cafés or pop-up stores, are fine too.
+      </p>
+      <p>
+        Please refrain from intentionally including goods printed with a real person's face (trading cards or acrylic stands of idols or actors, etc.), such as by posing them next to your plushie. The same applies even if the face is hidden with a mosaic or stamp. It's fine if they just happen to be in the background, such as on a shelf in your room.
+      </p>
+
+      <h2>What's fine to include</h2>
+      <p>
+        Pets (cats, dogs, etc.), your own illustrations, clothes and accessories, food, scenery, oshi goods, and so on. As long as your plushie is in the first photo, there are no limits on what else can appear (for dolls, figures, and goods showing people's faces such as trading cards, see their sections).
+      </p>
+      <p>
+        Group photos with your friends' plushies are of course welcome.
+      </p>
+      <p>
+        It's fine if a bit of a person, such as hands or feet, appears.<br>
+        Just please take care that no faces are shown.
+      </p>
+
+      <h2>About hashtags</h2>
+      <p>
+        Please use character or product name tags when your plushie itself is that character or product.
+      </p>
+      <p>
+        For example, use "#ポケモン" (Pokémon) when your plushie is a Pokémon. Please don't add it just because some Pokémon goods appear in the background.
+      </p>
+      <p>
+        "#いつぬい" is also a tag for plushies from Pattythree's "Issho ni Kurasu Nui" (plushies to live with) series. Because of the series name, some people think it means a plushie that's always with you, but the tag is for people looking for plushies from that series.
+      </p>
+      <p>
+        Mis-tagged posts make it harder for people searching by tag to find what they're looking for, so we'd appreciate your help.<br>
+        Tags for places or events (such as #カフェ巡り "café hopping" or #おでかけ "outings") are free to use as always.
+      </p>
+
+      <h2>Editing photos</h2>
+      <p>
+        Editing or compositing the background is fine. You can also use edits that make photos of your plushie look lovely, such as replacing the background with AI.
+      </p>
+      <p>
+        However, please refrain from posting images where the plushie itself was generated by AI.<br>
+        Nui Biyori is a place to keep photos of the plushies who are really by your side.
+      </p>
+
+      <h2>Makers' works and sales announcements</h2>
+      <p>
+        Please feel free to post photos of plushies or plushie clothes you made yourself, even if they're for sale. You can also add announcements like "Now on sale" or "On sale from the 10th."
+      </p>
+      <p>
+        When you do, we only ask two things:
+      </p>
+      <ul>
+        <li>Make the first photo show the plushie (for clothes, show them being worn)</li>
+        <li>Please don't post the same announcement many times in a short period</li>
+      </ul>
+      <p>
+        You can also register where you sell plushie clothes as a purchase link in your Closet.
+      </p>
+
+      <h2>Character plushies</h2>
+      <p>
+        You can keep posting photos of store-bought character plushies (oshi plushies, etc.) that you personally cherish, just as before.
+      </p>
+      <p>
+        If a company or organization holding the rights contacts us, we will review the request and take action such as removing the relevant posts. Contact for rights holders: info@nuibiyori.com
+      </p>
+
+      <h2>About this revision and earlier posts</h2>
+      <p>
+        With the August 2026 revision, dolls, which had been included as "your plushie," are no longer included. This is a change in policy, and to everyone who had been enjoying Nui Biyori with their dolls, we are truly sorry. It was a decision to keep Nui Biyori a place for everyday life with plushies.
+      </p>
+      <p>
+        We will never go back and delete photos you've already posted or plushies you've already registered. Posts from before the revision can stay as they are, and there's no need to delete your account. It's enough to follow the guidelines for new posts from now on.
+      </p>
+      <p>
+        Friends that aren't included can still be registered and recorded if you set their visibility to "Private (only you)" (they won't appear in the timeline, "Everyone's plushies," or search).
+      </p>
+      <p>
+        Friends you've already registered in your plushies can stay as they are.<br>
+        If you'd like, you can change a plushie's <strong>visibility to "Private"</strong> so it no longer appears in places like "Everyone's plushies" (records such as anniversaries and pats stay as they are). You can also delete them, but please note that <strong>any linked Closet items will be deleted too, and this can't be undone</strong>.
+      </p>
+
+      <h2>A request about follows and likes</h2>
+      <p>
+        Follows and likes on Nui Biyori are a way to tell someone, "Your plushie is so cute" or "I'd love to get to know you." When you follow or like, the other person gets a notification.
+      </p>
+      <div class="rule-box">
+        <div class="rule">Please don't follow lots of people at once in a short time just to gain followers.</div>
+      </div>
+      <p>
+        Likewise, please refrain from repeatedly following or liking without looking at the posts.<br>
+        We'd love for you to casually follow plushies you like and people you'd like to get to know 🧸
+      </p>
+      <p>
+        If we receive reports from many people, we may temporarily suspend your use of the App.
+      </p>
+
+      <h2>If you see a post that concerns you</h2>
+      <p>
+        Please use the report feature on the post, rather than pointing it out in the comments.<br>
+        We review every report and decide how to respond.
+      </p>
+      <p>
+        Photos posted and plushies registered before the August 2026 revision are not subject to action. We'd appreciate your cooperation in not pointing things out to each other.
+      </p>
+
+      <h2>If you're not sure</h2>
+      <p>
+        If you're wondering, "Is it okay to post this?", feel free to ask us through "Feedback" in the App.
+      </p>
+      <p class="note">
+        We'll keep growing these guidelines while listening to everyone's voices.
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← Back</a>
+    <div class="footer">© Nui Biyori</div>
+  </div>
+</body>
+</html>

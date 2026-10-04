@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | Nui Biyori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足（法的本文の直後に添える平易な説明） */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 英語版だけの追加（日本語版へのリンクと、翻訳である旨の注記） */
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "Note: "; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/terms.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/terms.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../terms.html" lang="ja">日本語</a></div>
+    <p class="translation-note">This is an English translation of the Japanese original, provided for your convenience. If there is any difference between the two, the Japanese version takes precedence.</p>
+    <div class="header">
+      <h1>Terms of Service</h1>
+      <div class="meta">Last updated: September 27, 2026</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        These Terms of Service set out the conditions for using "Nui Biyori" (the "App"). By using the App, you are deemed to have agreed to these Terms.
+      </p>
+
+      <h2>1. Accounts</h2>
+      <ul>
+        <li>Please register accurate information</li>
+        <li>Impersonating other people is prohibited</li>
+        <li>You are responsible for managing your account password</li>
+        <li>You may use multiple accounts for different purposes. However, using multiple accounts to evade a suspension, impersonate others, inflate likes or follows, or otherwise interfere with other users or the operation of the App is prohibited</li>
+      </ul>
+
+      <h2>2. Your Content</h2>
+      <p>
+        You retain the copyright to the content you post. The operator may store, reproduce (for example, for backups and thumbnail generation), display, and distribute your content only to the extent necessary to provide, maintain, and improve the App. This includes the right to sublicense to infrastructure providers such as servers and CDNs for the same purposes. The operator will not use your content for advertising or promotion without your permission.
+      </p>
+      <p class="note">
+        This refers to the processing needed to run the App, such as saving your photos on our servers and showing them in feeds and on other users' screens. The operator will never use photos of your plushies for any other purpose without your permission.
+      </p>
+      <p>
+        The operator does not use content posted by users (photos, text, etc.) to train or develop machine learning models, including generative AI, and does not provide it to third parties for these purposes. Such uses are not included in "the extent necessary to provide, maintain, and improve the App" described above.
+      </p>
+      <p class="note">
+        This is our promise that photos of your plushies will never be used as training material for AI or as material for image generation.
+      </p>
+
+      <h2>3. Prohibited Conduct</h2>
+      <p>
+        The following conduct is prohibited. If you violate these rules, we may take measures such as removing posts, suspending accounts, or deleting accounts:
+      </p>
+      <ul>
+        <li>Conduct that violates laws or public order and morals</li>
+        <li>Conduct that infringes the rights, reputation, or privacy of other users, third parties, or the operator</li>
+        <li>Posting obscene, violent, cruel, discriminatory, or harassing content</li>
+        <li>Spam, advertising, solicitation, or repeated posting for commercial purposes</li>
+        <li>Impersonating others or spreading false information</li>
+        <li>Conduct that interferes with the normal operation of the App (attacks, unauthorized access, automated tools, etc.)</li>
+        <li>Mass posting of content that clearly does not fit the concept of the App, such as content unrelated to plushies</li>
+        <li>Using a username, icon, or profile that is offensive to other users</li>
+        <li>Registering or using the App again with another account after being suspended</li>
+      </ul>
+      <p>
+        <strong>The operator has zero tolerance for objectionable content and for abusive or harassing behavior toward other users.</strong> When a violation is confirmed through reports or monitoring, we will promptly take action without prior notice, including removing the content and suspending or deleting the user's account.
+      </p>
+
+      <h2>4. Moderation</h2>
+      <p>
+        The operator reserves the right to remove, hide, or suspend content and accounts suspected of violating these Terms or the law, without prior notice. Reports submitted through the in-app report feature are, as a rule, reviewed within 24 hours, and we take the necessary action (removing the content and removing the offending user). In addition to reporting objectionable content, users can block abusive users to cut them off from their own feed.
+      </p>
+
+      <h2>5. Changes to or Suspension of the Service</h2>
+      <p>
+        The operator may change, add to, or suspend the App's content without notice.
+      </p>
+
+      <h2>6. Disclaimer</h2>
+      <p>
+        The App is provided "as is." To the maximum extent permitted by law, the operator is not liable for any damage arising from the use of, or inability to use, the App.
+      </p>
+
+      <h2>7. Changes to These Terms</h2>
+      <p>
+        These Terms may be changed without notice. The revised Terms take effect when they are posted in the App.
+      </p>
+
+      <h2>8. Governing Law and Jurisdiction</h2>
+      <p>
+        These Terms are governed by the laws of Japan. Any dispute relating to the App shall be subject to the exclusive jurisdiction of the court having jurisdiction over the operator's location.
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← Back</a>
+    <div class="footer">© Nui Biyori</div>
+  </div>
+</body>
+</html>

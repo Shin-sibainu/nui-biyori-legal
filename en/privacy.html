@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Nui Biyori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足（法的本文の直後に添える平易な説明） */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 英語版だけの追加（日本語版へのリンクと、翻訳である旨の注記） */
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "Note: "; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/privacy.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../privacy.html" lang="ja">日本語</a></div>
+    <p class="translation-note">This is an English translation of the Japanese original, provided for your convenience. If there is any difference between the two, the Japanese version takes precedence.</p>
+    <div class="header">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Last updated: July 25, 2026</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        The operator of "Nui Biyori" (the "App") respects your privacy and handles your information appropriately in accordance with this Policy.
+      </p>
+
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li>Account information: email address, username, display name, profile picture, bio, profile links</li>
+        <li>Posted content: photos, captions, tags, comments, likes, bookmarks, follow relationships</li>
+        <li>Plushie and closet information: photos, names, and notes for registered plushies and accessories</li>
+        <li>Report and block information: used for moderation</li>
+        <li>Technical information: login times, device type, OS version</li>
+      </ul>
+      <p class="note">
+        We do not collect location information. The App never asks for permission to access your device's location, and information recorded in photos such as where they were taken (Exif) is not kept, because it is removed when the photo is converted during upload. We also do not collect information not listed here, such as your contacts or your activity in other apps.
+      </p>
+
+      <h2>2. How We Use Information</h2>
+      <ul>
+        <li>Providing the App's features (showing posts, likes, follows, etc.)</li>
+        <li>Sending notifications</li>
+        <li>Personalizing the recommended feed</li>
+        <li>Detecting and responding to misuse and violating content</li>
+        <li>Statistical analysis to improve the service</li>
+      </ul>
+      <p class="note">
+        "Personalizing the recommended feed" means ordering posts based on your activity inside the App, such as likes and follows. We do not track your activity outside the App.
+      </p>
+      <p>
+        We do not use posted content such as photos as training data for machine learning models, including generative AI, and we do not send or provide it to external AI services for purposes such as image generation. Such uses are not included in "statistical analysis to improve the service" above.
+      </p>
+
+      <h2>3. Sharing with Third Parties</h2>
+      <p>
+        Except as required by law, we do not provide your personal information to third parties without your consent. However, we entrust data to the following service providers:
+      </p>
+      <ul>
+        <li>Authentication: Clerk Inc. (management of email addresses, passwords, etc.)</li>
+        <li>Database: Convex Inc. (storage of posts, profiles, and other data)</li>
+        <li>Image storage: Cloudflare, Inc. (storage and delivery of posted photos, profile pictures, etc.)</li>
+        <li>Push notifications: Expo (delivery of notifications, using your device's push token)</li>
+        <li>Billing: RevenueCat, Inc. (management of subscription purchase status)</li>
+        <li>Usage analytics: PostHog Inc. (screen views and feature usage. <strong>We do not send the contents of posted photos or text</strong>)</li>
+        <li>OAuth providers: Google / X (only if you choose to sign in with them)</li>
+      </ul>
+      <p class="note">
+        This means we entrust data to companies that are needed to run the App, such as for login and data storage. We will never sell your personal information to third parties for advertising or any other purpose.
+      </p>
+
+      <h2>4. Data Retention</h2>
+      <p>
+        We keep your data while your account is active. When you delete your account, all related data (profile, posts, comments, images, etc.) is promptly deleted. Some data may remain in backups for up to 30 days for legal compliance.
+      </p>
+      <p class="note">
+        Data briefly remains in backups after deletion so we can recover from unexpected failures and comply with the law. This data is not used in normal operations and is completely erased after that period.
+      </p>
+
+      <h2>5. Deleting Your Account</h2>
+      <p>
+        You can delete your account and related data at any time from "Delete account" in the App's settings. Deleted data cannot be restored.
+      </p>
+      <p>
+        If you can't do this from the App, for example because you have already deleted the App, you can request deletion by email from the <a href="../delete-account.html" style="color: var(--accent-deep);">Account deletion</a> page (in Japanese).
+      </p>
+
+      <h2>6. Use by Children</h2>
+      <p>
+        The App is not intended for use by children under 13. Children under 13 should use the App only with the consent and supervision of a parent or guardian.
+      </p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>
+        This Policy may be changed without notice. If there are important changes, we will let you know through in-app notices or other means.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        For questions about this Policy, please contact the operator.
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← Back</a>
+    <div class="footer">© Nui Biyori</div>
+  </div>
+</body>
+</html>
