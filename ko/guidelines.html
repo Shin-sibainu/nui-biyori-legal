@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시 가이드라인 | 누이비요리</title>
+  <meta property="og:title" content="게시 가이드라인 | 누이비요리">
+  <meta property="og:description" content="누이비요리에 올릴 수 있는 사진에 대해. ‘우리 아이’에 포함되는 것, 대상 외인 것, 헷갈릴 때 보는 표.">
+  <meta property="og:image" content="https://shin-sibainu.github.io/nui-biyori-legal/ogp-guidelines.png">
+  <meta property="og:url" content="https://shin-sibainu.github.io/nui-biyori-legal/ko/guidelines.html">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="누이비요리">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足 */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    /* いちばん大切なお願いを包むボックス（既存トークンのみ使用） */
+    .rule-box {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .rule-box .rule {
+      font-family: 'Klee One', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .rule-box p { margin-bottom: 0; font-size: 13px; color: var(--text-secondary); }
+
+    /* かんたん早見表 */
+    .table-scroll { overflow-x: auto; margin-bottom: 6px; }
+
+    .quick-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 13px;
+      line-height: 1.7;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .quick-table th {
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .quick-table th.ok-th {
+      background: var(--accent-soft);
+      color: var(--text-primary);
+      border-right: 1px solid var(--border);
+    }
+
+    .quick-table th.ng-th {
+      background: var(--bg);
+      color: var(--text-secondary);
+    }
+
+    .quick-table td {
+      padding: 9px 14px;
+      border-top: 1px solid var(--border);
+      color: var(--text-primary);
+      vertical-align: top;
+      width: 50%;
+    }
+
+    .quick-table td:first-child {
+      border-right: 1px solid var(--border);
+    }
+
+    .quick-table td:last-child {
+      color: var(--text-secondary);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 韓国語版だけの追加（ハングルの字体・日本語版/英語版へのリンク・翻訳である旨の注記） */
+    html, body { font-family: 'Zen Maru Gothic', 'Gowun Dodum', -apple-system, BlinkMacSystemFont, sans-serif; word-break: keep-all; }
+    .header h1, h2, .rule-box .rule { font-family: 'Klee One', 'Gowun Dodum', sans-serif; }
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "참고: "; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/guidelines.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/guidelines.html">
+  <link rel="alternate" hreflang="ko" href="https://shin-sibainu.github.io/nui-biyori-legal/ko/guidelines.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../guidelines.html" lang="ja">日本語</a><a href="../en/guidelines.html" lang="en">English</a></div>
+    <p class="translation-note">이 페이지는 일본어 원문을 이용자의 편의를 위해 번역한 것입니다. 두 내용에 차이가 있는 경우에는 일본어판이 우선합니다.</p>
+    <div class="header">
+      <h1>게시 가이드라인</h1>
+      <div class="meta">2026년 8월 7일 공개 (2026년 10월 4일 개정)</div>
+    </div>
+    <div class="content">
+      <p class="intro">
+        누이비요리는 소중한 인형 ‘우리 아이’와 함께하는 매일을 안심하고 남겨 둘 수 있는 곳을 목표로 하고 있어요. 이 가이드라인은 그 분위기를 모두 함께 지켜 나가기 위한 부탁이에요.
+      </p>
+
+      <h2>‘우리 아이’에 포함되는 것</h2>
+      <p>
+        누이비요리의 ‘우리 아이’는 <strong>몸이 폭신폭신·몽글몽글한, 부드러운 아이들</strong>이에요.
+      </p>
+      <ul>
+        <li>인형(동물 인형도, 시판 인형도, 손으로 만든 인형도, 아미구루미나 양모 펠트 인형도, 최애 인형도. 포켓몬이나 치이카와 같은 캐릭터 인형도 괜찮아요)</li>
+        <li>실바니안 패밀리나 플로키 마스코트처럼 몸 전체에 폭신한 가공(기모 가공)이 된 인형</li>
+      </ul>
+      <p>
+        입양해서 소중히 아끼는 아이라면 크기는 상관없어요.<br>
+        최애 캐릭터도 인형의 모습이라면 ‘우리 아이’예요.
+      </p>
+      <p>
+        감촉이 단단한지, 얼마나 폭신한지는 상관없어요. <strong>몸이 천이나 털실, 솜 등으로 만들어진 아이라면 ‘우리 아이’예요.</strong> 솜이 빵빵하게 들어 단단한 아이도, 매끈한 원단의 아이도, 천으로 만든 인형도 포함돼요.<br>
+        (‘폭신폭신·몽글몽글’은 인형과 돌·피규어를 구분하기 위한 표현이에요.)
+      </p>
+
+      <h2>지금은 대상 외로 하고 있는 것</h2>
+      <ul>
+        <li>돌(리카짱, 블라이스, 블라인드 돌 등 피부가 매끈한 소재의 인형)</li>
+        <li>피규어류(넨도로이드, 넨도로이드 돌, 오비츠로이드, 스케일 피규어, 소프비, 프라모델 등)</li>
+        <li>로봇 등 전자기기(몸의 바깥쪽이 천이나 기모로 되어 있고 인형의 모습을 한 아이는 ‘우리 아이’예요. 바깥쪽이 플라스틱 등으로 되어 있어 기계의 모습을 한 아이는 대상 외예요)</li>
+        <li>인형 자체를 AI로 생성한 이미지</li>
+        <li>실제 생물과 구별이 안 될 만큼 사실적인 인형(실제 동물 사진과 구별할 수 없게 되기 때문이에요. 반려동물 주문 제작 인형처럼 인형이라는 걸 알 수 있는 모습이라면 괜찮아요)</li>
+        <li>사진을 그대로 프린트한 쿠션이나 인형(사진 자체를 올리는 것과 다르지 않게 되기 때문이에요)</li>
+        <li>사람의 얼굴이 뚜렷하게 찍힌 사진(트레이딩 카드나 패널 등 인쇄물의 얼굴도 포함돼요)</li>
+        <li>첫 번째 사진에 우리 아이가 없는 사진(굿즈만, 풍경만 등)</li>
+      </ul>
+      <div class="rule-box">
+        <div class="rule">이미 올린 사진은 삭제하지 않으셔도 괜찮아요.</div>
+        <p>계정을 삭제하실 필요도 전혀 없어요. 지금까지의 게시물은 그대로 두시고, 앞으로 새로 올리는 게시물부터 이 가이드라인을 따라 주시면 돼요.</p>
+      </div>
+      <p>
+        기준은 <strong>그 아이의 몸이 폭신폭신한지</strong>예요.<br>
+        누이비요리를 열었을 때 폭신폭신한 아이들이 줄지어 있는, 그 풍경을 지키기 위한 기준이에요. 그 아이가 소중히 사랑받고 있는지로 선을 긋는 것은 결코 아니에요.
+      </p>
+      <p>
+        예전 운영팀 안내에서 돌이나 피규어도 괜찮다고 말씀드린 시기가 있었어요. 한 번 괜찮다고 안내드린 것에 나중에 제한을 두게 되어 정말 죄송해요. 운영팀도 돌과 피규어 아이들을 아끼시는 마음을 알기에, 사실은 모든 아이를 맞이하고 싶은 마음이에요. 다만 이번에는 누이비요리의 분위기를 지키는 것을 우선해, 마음 아프지만 이렇게 기준을 정하게 되었어요.
+      </p>
+
+      <h2>옷이 아니라 몸으로 판단해요</h2>
+      <p>
+        ‘우리 아이’인지는 옷이 아니라 그 아이 자체의 몸으로 판단해 주시면 돼요.<br>
+        몬치치나 라부부처럼 얼굴은 매끈해도 몸이 폭신폭신한 인형은 ‘우리 아이’예요.
+      </p>
+      <p>
+        반대로 폭신한 옷이나 인형 옷을 입고 있어도, 몸이 돌이나 피규어인 아이(넨도로이드 헤드를 사용한 아이도 포함해요)는 대상 외로 하고 있어요.
+      </p>
+
+      <h2>한눈에 보는 표</h2>
+      <div class="table-scroll">
+        <table class="quick-table">
+          <thead>
+            <tr>
+              <th class="ok-th">🧸 우리 아이 OK</th>
+              <th class="ng-th">지금은 대상 외</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>인형(최애 인형·동물 인형·포켓몬이나 치이카와 같은 캐릭터)</td>
+              <td>돌(리카짱·블라이스·블라인드 돌 등)</td>
+            </tr>
+            <tr>
+              <td>손으로 만든 인형·양모 펠트</td>
+              <td>넨도로이드·넨도로이드 돌</td>
+            </tr>
+            <tr>
+              <td>실바니안 패밀리·플로키 마스코트</td>
+              <td>소프비·스케일 피규어·프라모델</td>
+            </tr>
+            <tr>
+              <td>몬치치·라부부(얼굴은 매끈, 몸은 폭신폭신)</td>
+              <td>로봇 등 전자기기</td>
+            </tr>
+            <tr>
+              <td>반려동물 주문 제작 인형(인형의 모습인 아이)</td>
+              <td>사진을 그대로 프린트한 쿠션·인형</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        표에 없는 아이는 ‘몸이 폭신폭신·몽글몽글한가’로 생각해 보세요. 헷갈릴 때는 앱 안의 ‘피드백’에서 편하게 물어봐 주세요.
+      </p>
+
+      <h2>게시할 때 부탁드려요</h2>
+      <div class="rule-box">
+        <div class="rule">첫 번째 사진에 우리 아이가 나와 있을 것.</div>
+      </div>
+      <p>
+        타임라인에 보이는 것은 첫 번째 사진이에요. 누이비요리를 열었을 때 모두의 우리 아이들이 줄지어 있는, 그 풍경을 지키기 위한 부탁이에요.
+      </p>
+      <p>
+        두 번째 사진부터도 되도록 우리 아이와 함께라면 기뻐요🧸<br>
+        옷 클로즈업이나 음식 사진 등이 섞이는 건 괜찮아요.
+      </p>
+      <p>
+        만드는 중이거나 수선 중인 사진(속이나 바느질 중인 모습 등)은 두 번째 사진부터 올려 주세요.<br>
+        타임라인에는 평소 모습의 우리 아이가 보였으면 해요.
+      </p>
+
+      <h2>외출해서 찍을 때</h2>
+      <p>
+        외출해서 인형 사진을 찍는 것도 누이비요리의 즐거움 중 하나라고 생각해요.
+      </p>
+      <p>
+        한 가지, 가게에서의 촬영에 대해 부탁이 있어요. <strong>판매 중인 상품 안에 우리 아이를 넣거나 가게 진열대에 우리 아이를 올려놓고 찍은 사진은, 가게의 허락을 받지 않았다면 삼가 주시면 감사하겠어요.</strong> 가게 직원분이나 다른 손님께 폐가 될 수 있기 때문이에요.
+      </p>
+      <p>
+        가게 직원분께 확인해서 괜찮다고 한 경우나, 촬영이 허용된 장소, 직접 구매한 뒤의 상품과 함께 찍은 사진은 물론 괜찮아요.
+      </p>
+      <p>
+        지금까지 올린 사진을 삭제하실 필요는 없어요.
+      </p>
+
+      <h2>돌이나 피규어가 함께 찍힌 경우</h2>
+      <p>
+        돌이나 피규어는 ‘우리 아이’로 등록할 수 없어요. 사진에 대해서는 이렇게 생각해 주시면 좋겠어요.
+      </p>
+      <ul>
+        <li><strong>삼가 주셨으면 하는 것</strong>: 인형과 나란히 놓고 찍는 등, 돌이나 피규어를 일부러 함께 찍은 사진</li>
+        <li><strong>괜찮은 것</strong>: 방의 선반 등 우연히 배경에 찍힌 경우</li>
+      </ul>
+      <p>
+        찍히지 않도록 치우실 필요는 없어요. 또 지금까지 올린 사진도 삭제하지 않으셔도 괜찮아요.
+      </p>
+      <p>
+        아크릴 스탠드 같은 최애 굿즈가 함께 찍히는 건 지금처럼 괜찮아요. 캐릭터 굿즈(일러스트 아크릴 스탠드·캔뱃지 등)는 문제없어요. 버튜버나 우타이테처럼 모델이 실존 인물이어도, 일러스트로 그려진 것이라면 괜찮아요. 콜라보 카페나 팝업 스토어의 포토존 등에 있는, 일러스트로 그려진 캐릭터 패널과 나란히 찍은 사진도 괜찮아요.
+      </p>
+      <p>
+        실존 인물의 얼굴이 인쇄된 굿즈(아이돌이나 배우의 트레이딩 카드·아크릴 스탠드 등)를 우리 아이와 나란히 놓고 찍는 등 일부러 함께 찍는 것은 삼가 주시면 감사하겠어요. 모자이크나 스티커로 얼굴을 가린 경우도 같은 기준이에요. 방의 선반 등 우연히 배경에 찍히는 건 괜찮아요.
+      </p>
+
+      <h2>함께 찍혀도 괜찮은 것</h2>
+      <p>
+        반려동물(고양이·강아지 등), 직접 그린 그림, 옷이나 소품, 음식, 풍경, 최애 굿즈 등. 첫 번째 사진에 우리 아이가 나와 있다면 함께 찍히는 것에 제한은 없어요(돌이나 피규어, 트레이딩 카드 등 사람의 얼굴이 담긴 굿즈는 각 항목을 봐 주세요).
+      </p>
+      <p>
+        친구네 우리 아이들과의 단체 사진도 물론 괜찮아요.
+      </p>
+      <p>
+        손이나 발 등 사람이 조금 찍히는 것도 괜찮아요.<br>
+        얼굴만 찍히지 않도록 신경 써 주세요.
+      </p>
+
+      <h2>해시태그에 대해</h2>
+      <p>
+        캐릭터 이름이나 상품명 태그는, 우리 아이가 바로 그 캐릭터·그 상품일 때 달아 주시면 감사하겠어요.
+      </p>
+      <p>
+        예를 들어 ‘#ポケモン’(포켓몬)은 우리 아이가 포켓몬일 때 달아 주세요. 배경에 포켓몬 굿즈가 찍혀 있다는 이유만으로는 달지 말아 주시면 도움이 돼요.
+      </p>
+      <p>
+        ‘#いつぬい’도 Pattythree의 ‘함께 사는 인형’ 시리즈를 위한 태그예요. 이름 때문에 늘 함께 있는 아이를 말하는 걸까 생각하시는 분도 계시지만, 그 시리즈의 아이를 찾는 분들을 위한 태그예요.
+      </p>
+      <p>
+        태그로 찾는 분들이 찾기 어려워지기 때문에, 협조해 주시면 기쁘겠어요.<br>
+        장소나 일상의 태그(‘#カフェ巡り’(카페 투어), ‘#おでかけ’(나들이) 등)는 지금처럼 자유롭게 쓰셔도 돼요.
+      </p>
+
+      <h2>사진 보정에 대해</h2>
+      <p>
+        배경 보정이나 합성은 괜찮아요. 배경을 AI로 바꾸는 등, 우리 아이 사진을 멋지게 보이게 하는 보정도 사용하실 수 있어요.
+      </p>
+      <p>
+        다만 인형 자체를 AI로 생성한 이미지의 게시는 삼가 주세요.<br>
+        누이비요리는 실제로 곁에 있는 우리 아이의 사진을 남겨 가는 곳이에요.
+      </p>
+
+      <h2>작가님의 작품·판매 안내에 대해</h2>
+      <p>
+        직접 만드신 인형이나 인형 옷 사진은, 판매 중인 작품이라도 마음껏 올려 주세요. ‘판매 중이에요’, ‘◯일부터 판매해요’ 같은 안내를 함께 적으셔도 괜찮아요.
+      </p>
+      <p>
+        그때는 다음 두 가지만 부탁드려요.
+      </p>
+      <ul>
+        <li>첫 번째 사진은 인형의 모습으로 해 주세요(옷이라면 입혀 준 모습)</li>
+        <li>같은 안내를 짧은 시간 안에 여러 번 올리는 것은 삼가 주세요</li>
+      </ul>
+      <p>
+        인형 옷의 판매처는 옷장에 구매 링크로 등록할 수도 있어요.
+      </p>
+
+      <h2>캐릭터 인형에 대해</h2>
+      <p>
+        시판 캐릭터 인형(최애 인형 등)을 개인적으로 소중히 아끼는 사진은 지금처럼 올리실 수 있어요.
+      </p>
+      <p>
+        권리를 가진 기업·단체에서 요청이 있는 경우에는, 운영팀이 확인한 뒤 해당 게시물 삭제 등의 조치를 해요. 권리자 연락 창구: info@nuibiyori.com
+      </p>
+
+      <h2>이번 개정과 지금까지의 게시물에 대해</h2>
+      <p>
+        2026년 8월 개정으로, 지금까지 ‘우리 아이’에 포함했던 돌을 대상 외로 하게 되었어요. 방침이 바뀌게 되어, 돌과 함께 누이비요리를 즐겨 주셨던 분들께 정말 죄송해요. 누이비요리를 ‘인형과 함께하는 매일의 장소’로 지켜 나가기 위한 결정이에요.
+      </p>
+      <p>
+        이미 올린 사진이나 등록된 우리 아이를 운영팀이 거슬러 올라가 삭제하는 일은 없어요. 개정 전의 게시물은 그대로 두셔도 되고, 계정을 삭제하실 필요도 없어요. 앞으로의 새 게시물부터 가이드라인을 따라 주시면 충분해요.
+      </p>
+      <p>
+        대상 외인 아이도 공개 범위를 ‘비공개(나만 보기)’로 해 두시면, 우리 아이 등록이나 사진 기록용으로 사용하실 수 있어요(타임라인이나 ‘모두의 인형’, 검색에는 나오지 않아요).
+      </p>
+      <p>
+        이미 등록한 우리 아이도 그대로 두셔도 괜찮아요.<br>
+        신경 쓰이신다면 우리 아이의 <strong>공개 범위를 ‘비공개’</strong>로 바꾸시면 ‘모두의 인형’ 등에 표시되지 않아요(입양 기념일이나 쓰담쓰담 기록은 그대로 남아요). 삭제하실 수도 있지만, <strong>연결된 옷장 아이템도 함께 삭제되며 되돌릴 수 없으니</strong> 주의해 주세요.
+      </p>
+
+      <h2>팔로우와 좋아요에 대한 부탁</h2>
+      <p>
+        누이비요리의 팔로우와 좋아요는 ‘이 아이 귀엽다’, ‘친해지고 싶다’는 마음을 상대에게 전하는 거예요. 팔로우나 좋아요를 하면 상대에게 알림이 가요.
+      </p>
+      <div class="rule-box">
+        <div class="rule">팔로워를 늘리기 위해서만, 짧은 시간에 많은 분을 한꺼번에 팔로우하는 것은 삼가 주세요.</div>
+      </div>
+      <p>
+        게시물을 보지 않고 팔로우나 좋아요를 반복하는 것도 마찬가지로 삼가 주시면 감사하겠어요.<br>
+        마음에 드는 우리 아이나 친해지고 싶은 분을 편하게 팔로우해 주시면 기뻐요🧸
+      </p>
+      <p>
+        많은 분에게서 신고가 들어온 경우에는 이용을 일시적으로 정지할 수 있어요.
+      </p>
+
+      <h2>신경 쓰이는 게시물을 보았다면</h2>
+      <p>
+        댓글로 지적하시기보다는 게시물의 신고 기능을 이용해 주세요.<br>
+        내용은 운영팀이 모두 확인하고 대응을 판단해요.
+      </p>
+      <p>
+        또한 2026년 8월 개정 전에 올린 사진이나 등록된 우리 아이는 대응 대상에서 제외하고 있어요. 사용자끼리 서로 지적하는 일이 없도록 협조해 주시면 감사하겠어요.
+      </p>
+
+      <h2>헷갈릴 때는</h2>
+      <p>
+        ‘이거 올려도 될까?’ 하고 헷갈릴 때는 앱 안의 ‘피드백’에서 편하게 물어봐 주세요.
+      </p>
+      <p class="note">
+        이 가이드라인은 여러분의 목소리를 들으며 함께 키워 가려고 해요.
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← 돌아가기</a>
+    <div class="footer">© 누이비요리</div>
+  </div>
+</body>
+</html>
