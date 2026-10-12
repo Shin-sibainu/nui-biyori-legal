@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用條款 | Nui Biyori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足（法的本文の直後に添える平易な説明） */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 繁中版だけの追加（台湾の字形・日本語版/英語版へのリンク・翻訳である旨の注記） */
+    html, body { font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .header h1, h2, .rule-box .rule { font-family: 'Noto Sans TC', sans-serif; font-weight: 700; }
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "註："; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/terms.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/terms.html">
+  <link rel="alternate" hreflang="ko" href="https://shin-sibainu.github.io/nui-biyori-legal/ko/terms.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hant/terms.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../terms.html" lang="ja">日本語</a><a href="../en/terms.html" lang="en">English</a></div>
+    <p class="translation-note">本頁為日文原文的翻譯，僅供參考。若兩者內容有所不同，以日文版為準。</p>
+    <div class="header">
+      <h1>使用條款</h1>
+      <div class="meta">2026年9月27日 修訂</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        本使用條款規定「Nui Biyori」（以下稱「本應用程式」）的使用條件。使用本應用程式，即視為您已同意本條款。
+      </p>
+
+      <h2>1. 帳號</h2>
+      <ul>
+        <li>請填寫正確的資訊</li>
+        <li>禁止冒充他人</li>
+        <li>帳號密碼的管理，由使用者自行負責</li>
+        <li>您可以依用途分別使用多個帳號。但禁止為了規避停權、冒充他人、灌水喜歡或追蹤數等妨礙其他使用者或本應用程式營運的目的，而使用多個帳號</li>
+      </ul>
+
+      <h2>2. 發布的內容</h2>
+      <p>
+        使用者所發布內容的著作權，歸屬於使用者本人。營運者僅在提供、維護及改善本應用程式所需的範圍內，得儲存、重製（例如備份及產生縮圖等）、顯示及傳送該內容。此權利包含在相同目的範圍內，再授權予伺服器、CDN 等基礎設施提供者。營運者不會未經使用者許可，將內容用於廣告或宣傳。
+      </p>
+      <p class="note">
+        這是指將照片儲存在伺服器上、在動態或其他使用者的畫面上顯示等，讓應用程式運作所需的處理。營運者不會擅自將您的娃娃照片用於其他目的。
+      </p>
+      <p>
+        營運者不會將使用者發布的內容（照片、文字等）用於生成式 AI 等機器學習模型的訓練或開發，也不會為了這些目的提供給第三方。前項所述「提供、維護及改善所需的範圍」，不包含這些用途。
+      </p>
+      <p class="note">
+        這是我們的承諾：大家的娃娃照片，絕不會被拿去當作 AI 的訓練素材或圖像生成的材料。
+      </p>
+
+      <h2>3. 禁止事項</h2>
+      <p>
+        禁止下列行為。如有違反，我們可能會採取刪除貼文、停用帳號、刪除帳號等措施：
+      </p>
+      <ul>
+        <li>違反法令或公共秩序、善良風俗的行為</li>
+        <li>侵害其他使用者、第三方或營運者之權利、名譽或隱私的行為</li>
+        <li>發布猥褻、暴力、殘忍、歧視性或騷擾性的內容</li>
+        <li>垃圾訊息、廣告宣傳、招攬，或以商業目的連續發文</li>
+        <li>冒充他人、散布不實資訊的行為</li>
+        <li>妨礙本應用程式正常營運的行為（攻擊、未經授權的存取、使用自動化工具等）</li>
+        <li>大量發布與娃娃無關等，明顯不符合本應用程式理念的內容</li>
+        <li>使用會讓其他使用者感到不適的使用者名稱、頭像或個人檔案</li>
+        <li>遭停權者以其他帳號再次註冊或使用本應用程式的行為</li>
+      </ul>
+      <p>
+        <strong>營運者對於不當內容，以及對其他使用者造成困擾或具虐待性質的行為，採取零容忍（Zero Tolerance）的立場。</strong>經由檢舉或巡查確認違規時，我們將不經事先通知，迅速採取包括刪除該內容，以及對該使用者停權、刪除帳號在內的措施。
+      </p>
+
+      <h2>4. 內容審核</h2>
+      <p>
+        對於疑似違反本條款或法令的內容或帳號，營運者有權不經事先通知，予以刪除、設為不公開或停權。透過應用程式內檢舉功能提交的檢舉，原則上將於24小時內確認，並採取必要措施（刪除內容、排除違規使用者）。除了檢舉令人不適的內容之外，使用者也可以封鎖造成困擾的使用者，將其從自己的動態中隔絕。
+      </p>
+
+      <h2>5. 服務的變更與停止</h2>
+      <p>
+        營運者可能不經預告，變更、新增或停止本應用程式的內容。
+      </p>
+
+      <h2>6. 免責聲明</h2>
+      <p>
+        本應用程式係依現況提供。對於因使用或無法使用本應用程式所生之一切損害，營運者於法令允許的最大範圍內，不負任何責任。
+      </p>
+
+      <h2>7. 條款的變更</h2>
+      <p>
+        本條款可能不經預告而變更。變更後的條款，自公告於本應用程式內時起生效。
+      </p>
+
+      <h2>8. 準據法與管轄法院</h2>
+      <p>
+        本條款以日本法律為準據法。與本應用程式相關的爭議，以營運者所在地之管轄法院為專屬合意管轄法院。
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← 返回</a>
+    <div class="footer">© Nui Biyori</div>
+  </div>
+</body>
+</html>
