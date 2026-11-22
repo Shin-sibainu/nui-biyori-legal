@@ -215,6 +215,7 @@
       <ul>
         <li>Account information: email address, username, display name, profile picture, bio, profile links</li>
         <li>Posted content: photos, captions, tags, comments, likes, bookmarks, follow relationships</li>
+        <li>Messages: messages exchanged between users (text, photos, and shared posts), reactions to messages, and your settings for who can message you and for notifications</li>
         <li>Plushie and closet information: photos, names, and notes for registered plushies and accessories</li>
         <li>Outing spots: places you register (name and location), places you attach to posts, and places you save</li>
         <li>Report and block information: used for moderation</li>
@@ -232,6 +233,7 @@
       <ul>
         <li>Providing the App's features (showing posts, likes, follows, etc.)</li>
         <li>Sending notifications</li>
+        <li>Sending and receiving messages, and letting you know when a message arrives</li>
         <li>Personalizing the recommended feed</li>
         <li>Detecting and responding to misuse and violating content (including preventing suspended accounts from being recreated)</li>
         <li>Statistical analysis to improve the service</li>
@@ -251,15 +253,45 @@
         We ask in the app whether your photos may be shown, and only show photos from people who allow it. You can change this at any time in Settings &gt; Privacy. Changes apply to the pages right away, but it may take some time for them to disappear from search engine results. You can also choose not to show individual posts. Post, profile and shared-link pages continue not to appear in search engines.
       </p>
 
-      <h2>3. Sharing with Third Parties</h2>
+      <h2>3. Messages</h2>
+      <p>
+        Messages can be seen only by the two people in the conversation: the person who sent them and the person who received them. They are never shown to other users.
+      </p>
+      <p>
+        The operator respects the secrecy of communications and does not look at the content of messages. However, only in the following cases, we check them to the extent necessary:
+      </p>
+      <ul>
+        <li>When a user reports a chat: we review a copy of the last message from the other person and the 5 messages before and after it (including photos and shared posts). The person reporting is told about this range before sending the report.</li>
+        <li>When we are required to disclose them under the law</li>
+      </ul>
+      <p class="note">
+        The only tool the operator has for reading messages is one for viewing the copies from reports. We have not built any way to open the contents of a chat by specifying it.
+      </p>
+      <p>
+        We do not use the content of messages to order recommendations, to analyze usage, or for advertising. We also do not use it to train generative AI, and we do not send it to external services such as translation or AI services.
+      </p>
+      <p>
+        Photos sent in messages are stored under names that cannot be guessed, and are shown only in the apps of the two people in the chat.
+      </p>
+      <p>
+        When a message arrives, the notification shows only the sender's name and "sent you a message" (an emoji, for reactions). The text of the message is never included.
+      </p>
+      <p>
+        Whether you have read a message is not shown to the other person.
+      </p>
+      <p class="note">
+        Messages from people you don't follow arrive as "Message requests." In Settings &gt; Privacy, you can choose who can message you: "Everyone," "Only mutual follows," or "No one." Once you block someone, neither of you can send messages to the other.
+      </p>
+
+      <h2>4. Sharing with Third Parties</h2>
       <p>
         Except as required by law, we do not provide your personal information to third parties without your consent. However, we entrust data to the following service providers:
       </p>
       <ul>
         <li>Authentication: Clerk Inc. (management of email addresses, passwords, etc.)</li>
-        <li>Database: Convex Inc. (storage of posts, profiles, and other data)</li>
-        <li>Image storage: Cloudflare, Inc. (storage and delivery of posted photos, profile pictures, etc.)</li>
-        <li>Push notifications: Expo (delivery of notifications, using your device's push token)</li>
+        <li>Database: Convex Inc. (storage of posts, profiles, messages, and other data)</li>
+        <li>Image storage: Cloudflare, Inc. (storage and delivery of posted photos, profile pictures, photos sent in messages, etc.)</li>
+        <li>Push notifications: Expo (delivery of notifications, using your device's push token. Message notifications do not include the text of the message)</li>
         <li>Billing: RevenueCat, Inc. (management of subscription purchase status)</li>
         <li>Usage analytics: PostHog Inc. (screen views and feature usage. <strong>We do not send the contents of posted photos or text</strong>)</li>
         <li>Usage analytics: Google LLC (Google Analytics. Usage such as screens opened and time spent, plus an app-specific identifier and, on Android, the advertising ID. <strong>We do not send the contents of posted photos or text, or your username or email address</strong>)</li>
@@ -278,9 +310,15 @@
         The operator may provide these statistics (which cannot identify anyone) to partner companies. We never provide information that can identify you.
       </p>
 
-      <h2>4. Data Retention</h2>
+      <h2>5. Data Retention</h2>
       <p>
         We keep your data while your account is active. When you delete your account, all related data (profile, posts, comments, images, etc.) is promptly deleted. Some data may remain in backups for up to 30 days for legal compliance.
+      </p>
+      <p>
+        When you unsend a message, it is deleted from both people's screens (including any photo). When you delete a chat, it disappears from your own list but remains on the other person's side. When you delete your account, all chats you were part of are also deleted from the other person's side.
+      </p>
+      <p>
+        Copies of reported chats are kept even after a message is unsent or an account is deleted, so that we can handle the report and prevent the same person from doing it again.
       </p>
       <p class="note">
         Data briefly remains in backups after deletion so we can recover from unexpected failures and comply with the law. This data is not used in normal operations and is completely erased after that period.
@@ -289,7 +327,7 @@
         To prevent recreation, information used to recognize the devices of suspended accounts is kept even after the account is deleted. The marks on Apple's and Google's side are removed when a suspension is lifted (Google's marks are also deleted automatically 3 years after they were last used). Device information for accounts that are not suspended is deleted together with the account.
       </p>
 
-      <h2>5. Deleting Your Account</h2>
+      <h2>6. Deleting Your Account</h2>
       <p>
         You can delete your account and related data at any time from "Delete account" in the App's settings. Deleted data cannot be restored.
       </p>
@@ -297,17 +335,17 @@
         If you can't do this from the App, for example because you have already deleted the App, you can request deletion by email from the <a href="../delete-account.html" style="color: var(--accent-deep);">Account deletion</a> page (in Japanese).
       </p>
 
-      <h2>6. Use by Children</h2>
+      <h2>7. Use by Children</h2>
       <p>
         The App is not intended for use by children under 13. Children under 13 should use the App only with the consent and supervision of a parent or guardian.
       </p>
 
-      <h2>7. Changes to This Policy</h2>
+      <h2>8. Changes to This Policy</h2>
       <p>
         This Policy may be changed without notice. If there are important changes, we will let you know through in-app notices or other means.
       </p>
 
-      <h2>8. Contact</h2>
+      <h2>9. Contact</h2>
       <p>
         For questions about this Policy, please contact the operator.
       </p>
