@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发帖规范 | Nui Biyori</title>
+  <meta property="og:title" content="发帖规范 | Nui Biyori">
+  <meta property="og:description" content="关于可以在 Nui Biyori 发布的照片：哪些算是“我的玩偶”、哪些暂不开放，以及犹豫时可以参考的一览表。">
+  <meta property="og:image" content="https://shin-sibainu.github.io/nui-biyori-legal/ogp-guidelines.png">
+  <meta property="og:url" content="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hans/guidelines.html">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Nui Biyori">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足 */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    /* いちばん大切なお願いを包むボックス（既存トークンのみ使用） */
+    .rule-box {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .rule-box .rule {
+      font-family: 'Klee One', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .rule-box p { margin-bottom: 0; font-size: 13px; color: var(--text-secondary); }
+
+    /* かんたん早見表 */
+    .table-scroll { overflow-x: auto; margin-bottom: 6px; }
+
+    .quick-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 13px;
+      line-height: 1.7;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .quick-table th {
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .quick-table th.ok-th {
+      background: var(--accent-soft);
+      color: var(--text-primary);
+      border-right: 1px solid var(--border);
+    }
+
+    .quick-table th.ng-th {
+      background: var(--bg);
+      color: var(--text-secondary);
+    }
+
+    .quick-table td {
+      padding: 9px 14px;
+      border-top: 1px solid var(--border);
+      color: var(--text-primary);
+      vertical-align: top;
+      width: 50%;
+    }
+
+    .quick-table td:first-child {
+      border-right: 1px solid var(--border);
+    }
+
+    .quick-table td:last-child {
+      color: var(--text-secondary);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 簡体字版だけの追加（大陸の字形・日本語版/英語版へのリンク・翻訳である旨の注記） */
+    html, body { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .header h1, h2, .rule-box .rule { font-family: 'Noto Sans SC', sans-serif; font-weight: 700; }
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "註："; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/guidelines.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/guidelines.html">
+  <link rel="alternate" hreflang="ko" href="https://shin-sibainu.github.io/nui-biyori-legal/ko/guidelines.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hant/guidelines.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hans/guidelines.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../guidelines.html" lang="ja">日本語</a><a href="../en/guidelines.html" lang="en">English</a><a href="../zh-Hant/guidelines.html" lang="zh-Hant">繁體中文</a></div>
+    <p class="translation-note">本页为日文原文的翻译，仅供参考。若两者内容有所不同，以日文版为准。</p>
+    <div class="header">
+      <h1>发帖规范</h1>
+      <div class="meta">2026年8月7日 发布（2026年10月24日 修订）</div>
+    </div>
+    <div class="content">
+      <p class="intro">
+        Nui Biyori 希望成为一个地方，让你能安心留下与心爱的娃娃“我的玩偶”共度的每一天。这份规范，是为了和大家一起守护这个世界观，想拜托大家的几件事。
+      </p>
+
+      <h2>“我的玩偶”包含哪些娃娃</h2>
+      <p>
+        Nui Biyori 的“我的玩偶”，是指<strong>身体毛茸茸、软绵绵的柔软娃娃们</strong>。
+      </p>
+      <ul>
+        <li>娃娃（动物的娃娃、市售的娃娃、手工的娃娃、钩织娃娃或羊毛毡的娃娃，还有本命娃娃。宝可梦、吉伊卡哇等角色的娃娃也没问题）</li>
+        <li>像森林家族或植绒小玩偶那样，全身经过毛茸茸加工（植绒加工）的人偶</li>
+      </ul>
+      <p>
+        只要是接回家、被细心珍惜的娃娃，大小都没关系。<br>
+        本命角色的娃娃，只要是娃娃的模样，也是“我的玩偶”。
+      </p>
+      <p>
+        摸起来的软硬、毛茸茸的程度都没关系。<strong>只要身体是用布、毛线、棉花等做成的娃娃，就是“我的玩偶”。</strong>棉花塞得很扎实、摸起来硬硬的娃娃，布料滑滑的娃娃，用布做成的人偶，也都包含在内。<br>
+        （“毛茸茸、软绵绵”是用来区分娃娃和人偶、公仔的说法。）
+      </p>
+
+      <h2>目前暂不纳入范围的娃娃</h2>
+      <ul>
+        <li>人偶（莉卡娃娃、小布、盲盒人偶等，肌肤是光滑材质的人偶）</li>
+        <li>公仔类（黏土人、黏土人Doll、Obitsu-roid、比例公仔、软胶、拼装模型等）</li>
+        <li>机器人等电子产品（外层是布料或植绒、外型是娃娃的，就是“我的玩偶”。外层是塑料等、外型是机械的，目前暂不纳入范围）</li>
+        <li>以 AI 生成娃娃本身的图片</li>
+        <li>逼真到和真正的生物难以分辨的娃娃（因为会和真实动物的照片分不出来。宠物定制娃娃等，看得出是娃娃模样就没问题）</li>
+        <li>直接印上照片的抱枕或娃娃（因为这和直接发布照片本身没有差别）</li>
+        <li>清楚拍到人脸的照片（也包含小卡、立牌等印刷品上的脸）</li>
+        <li>第1张没有拍到你的玩偶的照片（只有周边、只有风景等）</li>
+      </ul>
+      <div class="rule-box">
+        <div class="rule">已经发布的照片，不需要删除哦。</div>
+        <p>也完全不需要删除账号。过去的帖子请直接保留，从今以后的新帖子，再依照这份规范就可以了。</p>
+      </div>
+      <p>
+        判断的界线，在于<strong>那个娃娃的身体是不是毛茸茸的</strong>。<br>
+        打开 Nui Biyori 时，毛茸茸的娃娃们排在一起——这条界线，是为了守护那片风景而画的。绝不是以那个娃娃有没有被好好珍惜来划分。
+      </p>
+      <p>
+        过去运营团队的说明中，曾经有一段时间告诉大家人偶和公仔也没问题。对于曾经说过可以的东西，事后又加上限制，真的非常抱歉。运营团队也知道大家多么珍惜自己的人偶和公仔，其实很希望能欢迎每一个娃娃。只是这一次，我们选择以守护 Nui Biyori 的世界观为优先，虽然心里很过意不去，还是做出了这样的划分。
+      </p>
+
+      <h2>判断看的是身体，不是衣服</h2>
+      <p>
+        是不是“我的玩偶”，只要看那个娃娃本身的身体，而不是衣服就可以了。<br>
+        像梦奇奇或 LABUBU 那样，脸是光滑的、但身体毛茸茸的娃娃，也是“我的玩偶”。
+      </p>
+      <p>
+        另一方面，即使穿着毛茸茸的衣服或玩偶装，只要身体是人偶或公仔（包括使用黏土人头部的娃娃），目前都暂不纳入范围。
+      </p>
+
+      <h2>简易对照表</h2>
+      <div class="table-scroll">
+        <table class="quick-table">
+          <thead>
+            <tr>
+              <th class="ok-th">🧸 可以当作我的玩偶</th>
+              <th class="ng-th">目前不在范围内</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>娃娃（本命娃娃、动物的娃娃、宝可梦或吉伊卡哇等角色）</td>
+              <td>人偶（莉卡娃娃、小布、盲盒人偶等）</td>
+            </tr>
+            <tr>
+              <td>手工娃娃、羊毛毡</td>
+              <td>黏土人、黏土人Doll</td>
+            </tr>
+            <tr>
+              <td>森林家族、植绒小玩偶</td>
+              <td>软胶、比例公仔、拼装模型</td>
+            </tr>
+            <tr>
+              <td>梦奇奇、LABUBU（脸是光滑的，身体是毛茸茸的）</td>
+              <td>机器人等电子产品</td>
+            </tr>
+            <tr>
+              <td>宠物定制娃娃（看得出是娃娃模样的）</td>
+              <td>直接印上照片的抱枕、娃娃</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        表格里没有的娃娃，请用“身体是不是毛茸茸、软绵绵的”来判断看看。不确定的时候，欢迎随时从 App 内的“意见与帮助”询问我们。
+      </p>
+
+      <h2>发帖时想拜托大家的事</h2>
+      <div class="rule-box">
+        <div class="rule">照片的第1张，要拍到你的玩偶。</div>
+      </div>
+      <p>
+        动态上显示的是第1张照片。打开 Nui Biyori 时，大家的娃娃们排在一起——这是为了守护那片风景的请求。
+      </p>
+      <p>
+        第2张以后的照片，如果也能尽量和你的玩偶一起拍，我们会很开心🧸<br>
+        夹杂衣服的特写或餐点的照片等，也没关系。
+      </p>
+      <p>
+        制作中或修补中的照片（露出内部、缝到一半的状态等），请放在第2张以后。<br>
+        我们希望动态上排列的，都是娃娃们平常的模样。
+      </p>
+
+      <h2>关于在外出地点拍照</h2>
+      <p>
+        带着娃娃在外出地点拍照，我们觉得也是 Nui Biyori 的乐趣之一。
+      </p>
+      <p>
+        关于在店内拍照，只有一件事想拜托大家。<strong>如果没有取得店家的许可，希望大家避免把娃娃放进销售中的商品里，或放在店内的陈列架上拍照。</strong>因为这可能会造成店员或其他客人的困扰。
+      </p>
+      <p>
+        如果已经向店员确认过没问题、在允许拍照的地方，或是和自己已经买下的商品一起拍，当然都没有问题。
+      </p>
+      <p>
+        过去发布的照片，不需要删除。
+      </p>
+
+      <h2>关于人偶或公仔入镜</h2>
+      <p>
+        人偶或公仔，无法添加为“我的玩偶”。关于照片，希望大家可以这样来想。
+      </p>
+      <ul>
+        <li><strong>希望大家避免的</strong>：和娃娃并排拍摄等，刻意拍进人偶或公仔的照片</li>
+        <li><strong>没问题的</strong>：像房间的柜子等，刚好拍进背景里的情况</li>
+      </ul>
+      <p>
+        不需要为了不拍到而特地收起来。另外，过去发布的照片也不需要删除。
+      </p>
+      <p>
+        亚克力立牌等本命周边一起入镜，和以往一样没问题。角色周边（插画的亚克力立牌、徽章等）都没有问题。像 VTuber 或翻唱歌手那样，即使原型是真实存在的人，只要是以插画呈现的就没问题。在联名咖啡厅或快闪店的拍照区等地方，和以插画绘制的角色立牌并排拍摄的照片，也没问题。
+      </p>
+      <p>
+        印有真人脸部的周边（偶像或演员的小卡、亚克力立牌等），希望大家避免和你的玩偶并排拍摄等刻意一起入镜的情况。即使用马赛克或贴纸遮住脸，也比照相同方式处理。像房间的柜子等，刚好拍进背景里的时候，只要用模糊或贴纸遮住脸就没问题。如果想留作自己的记录，把公开范围设为“私密”，就可以直接发布。
+      </p>
+
+      <h2>可以一起入镜的东西</h2>
+      <p>
+        宠物（猫咪、狗狗等）、自己画的插画、衣服或小物、餐点、风景、本命周边等。只要第1张有拍到你的玩偶，一起入镜的东西没有限制（人偶、公仔，以及小卡等印有人脸的周边，请参考各自的段落）。
+      </p>
+      <p>
+        和朋友家娃娃们的合照，当然也没问题。
+      </p>
+      <p>
+        手或脚等，稍微拍到人也没关系。<br>
+        自己或朋友等人的脸，即使用马赛克或贴纸遮住，也希望大家避免一起入镜。<br>
+        路过的人等刚好拍进背景里的时候，只要用模糊或贴纸遮住脸就没问题。如果想留作自己的记录，把公开范围设为“私密”，就可以直接发布。
+      </p>
+
+      <h2>关于主题标签</h2>
+      <p>
+        角色名称或商品名称的标签，希望在你的玩偶本身就是那个角色、那个商品时再加上。
+      </p>
+      <p>
+        例如“#ポケモン”（宝可梦），请在你的玩偶是宝可梦的娃娃时使用。如果只是背景拍到宝可梦的周边，希望可以不要加上。
+      </p>
+      <p>
+        “#いつぬい”也是 Pattythree 的“一緒に暮らすぬい”（一起生活的娃娃）系列娃娃专用的标签。因为系列名称是“一起生活的娃娃”，有些人可能会以为是指总是陪在身边的娃娃……不过，这是为了正在寻找该系列娃娃的人所设的标签。
+      </p>
+      <p>
+        标签用错的话，用标签搜索的人会比较难找到想看的娃娃，如果大家能一起配合，我们会很开心。<br>
+        地点或活动的标签（#カフェ巡り（咖啡厅巡礼）、#おでかけ（出游）等），和以往一样可以自由使用。
+      </p>
+
+      <h2>关于照片的编辑</h2>
+      <p>
+        背景的编辑或合成都没问题。像是用 AI 替换背景等，让你的玩偶的照片看起来更美好的编辑，也都可以使用。
+      </p>
+      <p>
+        用 AI 编辑或生成背景、场景的照片，如果能加上“#AI加工”（AI 编辑）的标签，会很有帮助。因为也有人不太喜欢看到使用 AI 的照片。要不要加是自由的，没有加也不算违规。<br>
+        不喜欢的人，可以长按帖子上的“#AI加工”标签并设为隐藏，这样就不会出现在动态上（随时都能从设置的“屏蔽的标签”解除）。
+      </p>
+      <p>
+        不过，请避免发布以 AI 生成娃娃本身的图片。<br>
+        Nui Biyori 是留下真正陪在身边的娃娃照片的地方。
+      </p>
+
+      <h2>关于头像和封面图片</h2>
+      <p>
+        真人的脸部照片（偶像、演员等）请避免当作头像或封面图片。<br>
+        推荐使用你的玩偶等绒毛娃娃的照片，或是插画。
+      </p>
+
+      <h2>关于创作者的作品与销售信息</h2>
+      <p>
+        自己制作的娃娃或娃衣的照片，即使是销售中的作品，也欢迎发布。附上“销售中”“◯日开始销售”等信息也没关系。
+      </p>
+      <p>
+        这时，只想拜托大家以下2件事。
+      </p>
+      <ul>
+        <li>第1张请放娃娃的模样（如果是衣服，请放穿在娃娃身上的样子）</li>
+        <li>请避免在短时间内重复发布相同的信息</li>
+      </ul>
+      <p>
+        娃衣的销售网址，也可以在衣柜中添加为购买链接。
+      </p>
+
+      <h2>关于角色娃娃</h2>
+      <p>
+        以个人身份珍惜市售角色娃娃（本命娃娃等）的照片，和以往一样都可以发布。
+      </p>
+      <p>
+        如果拥有权利的企业或团体提出要求，运营团队会在确认后，进行删除相关帖子等处理。权利人联系邮箱：info@nuibiyori.com
+      </p>
+
+      <h2>关于这次的修订与过去的帖子</h2>
+      <p>
+        在2026年8月的修订中，原本包含在“我的玩偶”里的人偶，改为不纳入范围。这是方针上的改变，对于一直和人偶一起期待着 Nui Biyori 的大家，真的非常抱歉。这是为了守护 Nui Biyori 作为“与娃娃共度每一天的地方”所做的决定。
+      </p>
+      <p>
+        过去发布的照片或已添加的娃娃，运营团队不会回溯删除。修订前的帖子可以直接保留，也不需要删除账号。从今以后的新帖子依照规范，就足够了。
+      </p>
+      <p>
+        不在范围内的娃娃，只要将公开范围设为“私密（仅自己）”，也可以用来添加娃娃及记录照片（不会出现在动态、“大家的娃娃”或搜索中）。
+      </p>
+      <p>
+        已经添加在“我的玩偶”中的娃娃，也可以直接保留。<br>
+        如果在意的话，只要将娃娃的<strong>公开范围改为“私密”</strong>，就不会再显示在“大家的娃娃”等地方（接回家纪念日和摸摸的记录都会保留）。也可以删除，但<strong>链接的衣柜单品也会一起被删除，而且无法恢复</strong>，请特别注意。
+      </p>
+
+      <h2>关于关注和点赞的请求</h2>
+      <p>
+        Nui Biyori 的关注和点赞，是把“这只娃娃好可爱”“想和你成为好朋友”的心意传达给对方的方式。关注或点赞时，对方会收到通知。
+      </p>
+      <div class="rule-box">
+        <div class="rule">请避免只为了增加粉丝，就在短时间内一次关注大量的人。</div>
+      </div>
+      <p>
+        同样地，也希望大家避免不看帖子就反复关注或点赞。<br>
+        如果能轻松关注自己在意的娃娃、想成为好朋友的人，我们会很开心🧸
+      </p>
+      <p>
+        如果收到许多人的举报，我们可能会暂时暂停你的使用权限。
+      </p>
+
+      <h2>看到令人在意的帖子时</h2>
+      <p>
+        请不要在评论中提醒或指正，而是使用帖子的举报功能。<br>
+        运营团队会确认所有内容，并判断如何处理。
+      </p>
+      <p>
+        另外，2026年8月修订前发布的照片及已添加的娃娃，不在处理范围内。也拜托大家不要彼此互相指正。
+      </p>
+
+      <h2>不确定的时候</h2>
+      <p>
+        不确定“这个可以发布吗？”的时候，欢迎随时从 App 内的“意见与帮助”询问我们。
+      </p>
+      <p class="note">
+        这份规范，会一边聆听大家的声音，一边慢慢成长。
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← 返回</a>
+    <div class="footer">© Nui Biyori</div>
+  </div>
+</body>
+</html>

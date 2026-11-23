@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 | Nui Biyori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足（法的本文の直後に添える平易な説明） */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 簡体字版だけの追加（大陸の字形・日本語版/英語版へのリンク・翻訳である旨の注記） */
+    html, body { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .header h1, h2, .rule-box .rule { font-family: 'Noto Sans SC', sans-serif; font-weight: 700; }
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "註："; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://shin-sibainu.github.io/nui-biyori-legal/ko/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hant/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hans/privacy.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../privacy.html" lang="ja">日本語</a><a href="../en/privacy.html" lang="en">English</a><a href="../zh-Hant/privacy.html" lang="zh-Hant">繁體中文</a></div>
+    <p class="translation-note">本页为日文原文的翻译，仅供参考。若两者内容有所不同，以日文版为准。</p>
+    <div class="header">
+      <h1>隐私政策</h1>
+      <div class="meta">2026年11月21日 修订</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        “Nui Biyori”（以下称“本应用”）的运营者尊重用户的隐私，并按照本政策妥善处理相关信息。
+      </p>
+
+      <h2>1. 收集的信息</h2>
+      <ul>
+        <li>账号信息：电子邮件地址、用户名、显示名称、头像、自我介绍、个人主页链接</li>
+        <li>发布的内容：照片、内文、标签、评论、点赞、收藏、关注关系</li>
+        <li>娃娃与衣柜信息：添加的娃娃及小物的照片、名称、备注</li>
+        <li>出游地点：用户添加的地点（名称、位置）、加在帖子上的地点、保存的地点</li>
+        <li>举报与拉黑信息：用于内容审核</li>
+        <li>年龄层与性别：仅限您自行选择回答时（只用于统计人数，不会显示给其他用户）</li>
+        <li>技术信息：登录时间、设备类型、操作系统版本、用来识别设备的信息（详见下方）、应用的使用状况（打开的页面、使用时间、是否有 App 内购买等）、Android 设备的广告 ID、根据 IP 地址推测的大致地区</li>
+      </ul>
+      <p class="note">
+        当前位置只会在您于出游地图中点击“查看当前位置附近”等功能时，经设备授权后使用。当前位置仅用于将地图移动到该处，不会保存于或发送至运营者的服务器。服务器上保存的位置，仅限用户自行添加的地点（出游地点）。照片中记录的拍摄地点等信息（Exif），会在上传时的转换过程中移除，不会被保存。我们也不会取得联系人、在其他应用中的行为记录等未记载于此的信息。
+      </p>
+      <p class="note">
+        用来识别设备的信息，仅用于防止被封禁的账号在同一台设备上重新创建。我们会将 Android 上每台设备的编号（Android ID）、iPhone 上提供给应用使用的编号（IDFV），转换为无法还原的形式后保存。此外，我们会使用 Apple 的 DeviceCheck 及 Google 的 Play Integrity API，仅对被封禁账号的设备，在 Apple、Google 端加上一个“已封禁设备”的小标记。这个标记只是几个比特的记号，运营者无法借此得知设备的编号或持有人。
+      </p>
+
+      <h2>2. 使用目的</h2>
+      <ul>
+        <li>提供本应用的功能（显示帖子、点赞、关注等）</li>
+        <li>发送通知</li>
+        <li>推荐动态的个性化</li>
+        <li>检测及处理不当使用与违规内容（包括防止被封禁的账号重新创建）</li>
+        <li>为改善服务而进行的统计分析</li>
+        <li>掌握用户整体的趋势（年龄层、性别、地区等统计）</li>
+      </ul>
+      <p class="note">
+        “推荐动态的个性化”是指根据您在 App 内点赞、关注等行为来排列帖子。排列推荐内容时，不会使用您在应用以外的行为。
+      </p>
+      <p>
+        我们不会将发布的照片等内容用作生成式 AI 等机器学习模型的训练数据，也不会为了图像生成等目的，将其发送或提供给外部的 AI 服务。上述“为改善服务而进行的统计分析”，不包含这些用途。
+      </p>
+
+      <p>
+        对于出游地图中有一定人数的用户上传照片的地点，我们会将地点名称、说明、拍照人数，以及允许展示的用户的照片（放在地点上的公开帖子照片的缩小版），以可从搜索引擎浏览的网页形式公开。不会展示发帖者的名字、内文及回应数。
+      </p>
+      <p class="note">
+        是否展示照片会在 App 中询问，只展示允许者的照片。可随时在 设置 &gt; 隐私 中更改，页面会立即反映，但从搜索引擎结果中消失可能需要一段时间。也可以设置个别帖子不展示。帖子、个人主页及分享链接的页面，仍然不会显示在搜索引擎中。
+      </p>
+
+      <h2>3. 向第三方提供</h2>
+      <p>
+        除法律法规规定外，未经本人同意，我们不会将用户的个人数据提供给第三方。但我们会将数据委托给下列服务提供者：
+      </p>
+      <ul>
+        <li>身份验证：Clerk Inc.（管理电子邮件地址、密码等）</li>
+        <li>数据库：Convex Inc.（保存帖子、个人主页等数据）</li>
+        <li>图片保存：Cloudflare, Inc.（保存及发送帖子照片、头像等）</li>
+        <li>推送通知：Expo（发送通知。使用设备的推送令牌）</li>
+        <li>付费管理：RevenueCat, Inc.（管理订阅的购买状态）</li>
+        <li>使用状况分析：PostHog Inc.（页面浏览及功能的使用状况。<strong>不会发送发布的照片或内文的内容</strong>）</li>
+        <li>使用状况分析：Google LLC（Google Analytics。打开的页面、使用时间等使用状况，以及应用专用的识别码，Android 另含广告 ID。<strong>不会发送发布的照片或内文的内容，也不会发送用户名或电子邮件地址</strong>）</li>
+        <li>地图显示：Apple Inc.（iPhone）/ Google LLC（Android）（用于显示出游地图的地图）</li>
+        <li>第三方账号登录：Apple Inc. / Google LLC（仅限选择使用 Apple 或 Google 登录时）</li>
+        <li>防止不当使用：Apple Inc.（DeviceCheck、iPhone）/ Google LLC（Play Integrity API、Android）（用于记录被封禁账号的设备的标记）</li>
+        <li>翻译：Microsoft Corporation（Azure AI Translator。只有在帖子或评论按下“翻译”时，才会发送该段文本进行翻译。发送的文本不会被保存。不会发送照片）</li>
+      </ul>
+      <p class="note">
+        这是指我们将数据委托给登录验证、数据保存等让应用运作所需的服务商。我们绝不会为了广告等目的，将大家的个人数据出售给第三方。
+      </p>
+      <p class="note">
+        Google Analytics 会收到您打开的页面、使用时间等使用状况，以及应用专用的识别码（Android 另含广告 ID）。对于已登录 Google 账户并打开 Google“个性化广告”的用户，Google 会推测年龄层、性别、兴趣等，并仅以无法识别个人的统计数据提供给运营者（Google 信号）。运营者不会得知任何个人的年龄层或性别。在 iPhone 上，我们不使用广告识别码（IDFA），也不会要求追踪许可。关于 Google 如何处理这些信息，请参阅“<a href="https://policies.google.com/technologies/partner-sites?hl=zh-CN" style="color: var(--accent-deep);">Google 如何使用采用其服务的网站或应用所收集的信息</a>”。您可以在 Google 账户的“我的活动”与“广告设置”中查看、删除数据，或关闭个性化广告。在 Android 上，您可以在设备的设置（设置 &gt; Google &gt; 广告）中删除或重设广告 ID。
+      </p>
+      <p class="note">
+        运营者可能会将这些统计数据（无法识别个人者）提供给合作企业。我们不会提供可识别个人的信息。
+      </p>
+
+      <h2>4. 数据保存期限</h2>
+      <p>
+        在账号有效期间，我们会保留数据。删除账号后，所有相关数据（个人主页、帖子、评论、图片等）将迅速删除。部分数据可能为因应法律法规要求，于备份中保留最长30天。
+      </p>
+      <p class="note">
+        删除后短期留在备份中，是为了万一发生故障时的恢复及因应法律法规要求。正常运营中不会使用这些数据，期限届满后将完全删除。
+      </p>
+      <p class="note">
+        用来识别被封禁账号的设备的信息，为了防止重新创建账号，即使在账号删除后仍会保留。Apple、Google 端的标记，会在解除封禁时清除（Google 端的标记，会在最后一次使用起3年后自动清除）。未被封禁账号的设备信息，会随账号删除一并删除。
+      </p>
+
+      <h2>5. 删除账号</h2>
+      <p>
+        您可以随时从 App 内设置页面的“删除账号”，删除账号及相关数据。删除后的数据无法恢复。
+      </p>
+      <p>
+        若您已删除应用等，而无法从应用操作时，可以通过<a href="../delete-account.html" style="color: var(--accent-deep);">删除账号</a>页面（日文）以电子邮件提出申请。
+      </p>
+
+      <h2>6. 关于儿童的使用</h2>
+      <p>
+        本应用并非以未满13周岁的人为使用对象。未满13周岁的人如需使用，请在家长或监护人的同意与监督下使用。
+      </p>
+
+      <h2>7. 政策的变更</h2>
+      <p>
+        本政策可能不经预告而变更。如有重大变更，我们将通过 App 内的通知等方式告知。
+      </p>
+
+      <h2>8. 联系我们</h2>
+      <p>
+        关于本政策的问题，请与运营者联系。
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← 返回</a>
+    <div class="footer">© Nui Biyori</div>
+  </div>
+</body>
+</html>

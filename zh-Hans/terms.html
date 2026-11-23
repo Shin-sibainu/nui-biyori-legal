@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用条款 | Nui Biyori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F3ED;
+      --surface: #FFFCF8;
+      --text-primary: #6B5846;
+      --text-secondary: #9A8776;
+      --accent: #D8BFA5;
+      --accent-soft: #EFE3D7;
+      --accent-deep: #B89070;
+      --border: #E8DDD2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 20px 64px; }
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 28px;
+      padding: 8px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      border-color: var(--accent);
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 28px 20px;
+      margin-bottom: 0;
+    }
+
+    .header h1 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding: 28px 28px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 24px 20px; border-radius: 0 0 16px 16px; }
+      .header { padding: 24px 20px 18px; border-radius: 16px 16px 0 0; }
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-family: 'Klee One', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 32px 0 12px;
+      letter-spacing: 0.04em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    /* やさしい補足（法的本文の直後に添える平易な説明） */
+    p.note {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: -4px 0 16px;
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+    p.note::before {
+      content: "※ ";
+      color: var(--accent-deep);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      letter-spacing: 0.08em;
+    }
+
+    /* 簡体字版だけの追加（大陸の字形・日本語版/英語版へのリンク・翻訳である旨の注記） */
+    html, body { font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .header h1, h2, .rule-box .rule { font-family: 'Noto Sans SC', sans-serif; font-weight: 700; }
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .lang-bar a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .translation-note {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin: 0 4px 14px;
+    }
+    p.note { padding-left: 0; text-indent: 0; }
+    p.note::before { content: "註："; font-weight: 600; }
+  </style>
+  <link rel="alternate" hreflang="ja" href="https://shin-sibainu.github.io/nui-biyori-legal/terms.html">
+  <link rel="alternate" hreflang="en" href="https://shin-sibainu.github.io/nui-biyori-legal/en/terms.html">
+  <link rel="alternate" hreflang="ko" href="https://shin-sibainu.github.io/nui-biyori-legal/ko/terms.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hant/terms.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://shin-sibainu.github.io/nui-biyori-legal/zh-Hans/terms.html">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-bar"><a href="../terms.html" lang="ja">日本語</a><a href="../en/terms.html" lang="en">English</a><a href="../zh-Hant/terms.html" lang="zh-Hant">繁體中文</a></div>
+    <p class="translation-note">本页为日文原文的翻译，仅供参考。若两者内容有所不同，以日文版为准。</p>
+    <div class="header">
+      <h1>使用条款</h1>
+      <div class="meta">2026年11月21日 修订</div>
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        本使用条款规定“Nui Biyori”（以下称“本应用”）的使用条件。使用本应用，即视为您已同意本条款。
+      </p>
+
+      <h2>1. 账号</h2>
+      <ul>
+        <li>请填写正确的信息</li>
+        <li>禁止冒充他人</li>
+        <li>账号密码的管理，由用户自行负责</li>
+        <li>您可以根据用途分别使用多个账号。但禁止为了规避封禁、冒充他人、刷点赞数或关注数等妨碍其他用户或本应用运营的目的，而使用多个账号</li>
+      </ul>
+
+      <h2>2. 发布的内容</h2>
+      <p>
+        用户所发布内容的著作权，归属于用户本人。运营者仅在提供、维护及改善本应用所需的范围内，可以保存、复制（例如备份及生成缩略图等）、显示及发送该内容。此权利包含在相同目的范围内，再许可给服务器、CDN 等基础设施提供者。运营者不会未经用户许可，将内容用于广告或宣传。
+      </p>
+      <p class="note">
+        这是指将照片保存在服务器上、在动态或其他用户的画面上显示等，让应用运作所需的处理。运营者不会擅自将您的娃娃照片用于其他目的。
+      </p>
+      <p>
+        运营者不会将用户发布的内容（照片、文本等）用于生成式 AI 等机器学习模型的训练或开发，也不会为了这些目的提供给第三方。前项所述“提供、维护及改善所需的范围”，不包含这些用途。
+      </p>
+      <p class="note">
+        这是我们的承诺：大家的娃娃照片，绝不会被拿去当作 AI 的训练素材或图像生成的材料。
+      </p>
+
+      <p>
+        对于出游地图中有一定人数的用户上传照片的地点，运营者可以将地点名称、说明、拍照人数，以及允许展示的用户的照片（放在地点上的公开帖子照片的缩小版），以可从搜索引擎浏览的网页形式显示。不会显示发帖者的名字、内文及回应数。展示的许可可随时在 App 的设置中撤回。
+      </p>
+      <p class="note">
+        希望用“○○ 娃娃拍照”搜索的娃娃爱好者，能找到出游的地点和 Nui Biyori，让一起享受带娃娃出游的人越来越多。只有在 App 中回答“可以放”的人的照片才会展示。
+      </p>
+
+      <h2>3. 禁止事项</h2>
+      <p>
+        禁止下列行为。如有违反，我们可能会采取删除帖子、停用账号、删除账号等措施：
+      </p>
+      <ul>
+        <li>违反法律法规或公共秩序、善良风俗的行为</li>
+        <li>侵害其他用户、第三方或运营者的权利、名誉或隐私的行为</li>
+        <li>发布猥亵、暴力、残忍、歧视性或骚扰性的内容</li>
+        <li>垃圾消息、广告宣传、招揽，或以商业目的连续发帖</li>
+        <li>冒充他人、散布不实信息的行为</li>
+        <li>妨碍本应用正常运营的行为（攻击、未经授权的访问、使用自动化工具等）</li>
+        <li>大量发布与娃娃无关等，明显不符合本应用理念的内容</li>
+        <li>使用会让其他用户感到不适的用户名、头像或个人主页</li>
+        <li>被封禁的用户以其他账号再次注册或使用本应用的行为</li>
+      </ul>
+      <p>
+        <strong>运营者对于不当内容，以及对其他用户造成困扰或具虐待性质的行为，采取零容忍（Zero Tolerance）的立场。</strong>经由举报或巡查确认违规时，我们将不经事先通知，迅速采取包括删除该内容，以及对该用户封禁、删除账号在内的措施。
+      </p>
+
+      <h2>4. 内容审核</h2>
+      <p>
+        对于疑似违反本条款或法律法规的内容或账号，运营者有权不经事先通知，予以删除、设为不公开或封禁。通过 App 内举报功能提交的举报，原则上将于24小时内确认，并采取必要措施（删除内容、排除违规用户）。除了举报令人不适的内容之外，用户也可以拉黑造成困扰的用户，将其从自己的动态中隔绝。
+      </p>
+
+      <h2>5. 服务的变更与停止</h2>
+      <p>
+        运营者可能不经预告，变更、添加或停止本应用的内容。
+      </p>
+
+      <h2>6. 免责声明</h2>
+      <p>
+        本应用系按现状提供。对于因使用或无法使用本应用所产生的一切损害，运营者于法律法规允许的最大范围内，不负任何责任。
+      </p>
+
+      <h2>7. 条款的变更</h2>
+      <p>
+        本条款可能不经预告而变更。变更后的条款，自公告于本应用内时起生效。
+      </p>
+
+      <h2>8. 适用法律与管辖法院</h2>
+      <p>
+        本条款适用日本法律。与本应用相关的争议，由运营者所在地有管辖权的法院专属管辖。
+      </p>
+    </div>
+
+    <a class="back-link" href="./index.html">← 返回</a>
+    <div class="footer">© Nui Biyori</div>
+  </div>
+</body>
+</html>
